@@ -14,33 +14,6 @@
         font-family: helvetica, arial, sans-serif;
         margin:0.6em 0.6em 0.6em 0.6em;
       }
-      nav{height:40px;border-bottom:1px solid #ddd;position:fixed;top:0;left:0;right:0;background:#fff;z-index:990;}
-
-/* remove bullets and add transition effect */
-nav ul{list-style-type: none;margin:0;padding:0;transition: transform .75s ease-in-out;  -webkit-transition: transform .75s ease-in-out;}
-
-/* fixed menu button */
-nav > ul >li{position: fixed;left:36px;top:0px;z-index:991;line-height:40px;}
-
-/* initial state: hide the menu */
-nav > ul > li > ul{position:fixed;top:0;left:-240px;width:240px;bottom:0;background:#fefefe;z-index:990;padding-top:36px;border-right:1px solid #ddd;  }
-
-/* Hover state, the menu button has been clicked*/
-
-/* scroll the menu into the page */
-nav > ul > li:hover > ul{transform: translate3d( 240px, 0, 0 );-webkit-transform: translate3d( 240px, 0, 0 );}
-
-/* div on top of menu to simulate the close button, delay animation for .75s*/
-#closemenu{position:fixed;top:-40px;left:0;right:0;height:40px; z-index:999; line-height:40px; padding-left:210px;font-size:36px;
-        transition: transform .05s ease-in-out;-webkit-transition: transform .05s ease-in-out; -webkit-transition-delay: 0.70s;transition-delay: 0.70s;
-      }
-/* the the close menu button, uses ~ selector */
-nav ul:hover  ~ #closemenu{transform: translate3d( 0, 40px, 0 );-webkit-transform: translate3d( 0, 40px, 0 )}
-
-/* styling */
-nav a{color: #4A8DDD;}
-nav > ul > li > ul > li{font-size:20px;padding:8px 0 8px 8px;border-bottom:1px solid #ddd;}
-nav > ul > li > ul > li >a{display:block; text-decoration:none;padding:8px 0;}
       @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 body {
   font-family: Roboto, sans-serif;
@@ -143,19 +116,6 @@ button {
     <br>
     <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
       </h1></center>
-      <nav><center>Navigation🎯</center>
-    <ul>
-      <li>&#9776;
-        <ul>
-          <li><a href="index.html">Home🏠</a></li>
-            <li><a href="about.html">About📜</a></li>
-          <li><a href="">Blogs📖</a></li>
-            <li><a href="Previousevents.html">Events⭐</a></li>
-        </ul>
-      </li>
-    </ul>
-    <div id="closemenu">&#215;</div>
-  </nav>
     <left>
     <div class="card" >
     <svg viewBox="0 0 100 100">
