@@ -7,19 +7,8 @@
     <link rel="canonical" href="https://preview.amp.dev/documentation/components/amp-carousel.example.3.html">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
- <!-- Vendor CSS Files -->
- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
- <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
- <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
- <!-- Template Main CSS File -->
- <link href="assets/css/style.css" rel="stylesheet">
-
-
-
+<link rel="icon" href="favicon.ico">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="This is the AMP Boilerplate.">
@@ -32,11 +21,114 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <link rel="canonical" href=".">
-    <title>My AMP Page</title>
+    <title>Techeva- NSEC ECE Tech-Blogs!</title>
 
 <style>
+  *{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+  .hero-section{
+  align-items: flex-start;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+  border-radius: 3px;
+  margin-left: 3px;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+  border-radius: 3px;
+}
+
+@media(min-width: 540px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.card{
+  list-style: none;
+  position: relative;
+  border-radius: 3px;
+}
+
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card:hover .card__background {
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card__background{
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__category{
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading{
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+  color:white;
+}
+  #h{
+        font-family: helvetica, arial, sans-serif;
+        margin:0.6em 0.6em 0.6em 0.6em;
+      }
   body{
-      background-image:url(https://www.fg-a.com/wallpapers/white-stone-1280.jpg);
       background-size: cover;
       background-attachment:fixed;
     }
@@ -59,422 +151,6 @@
   box-sizing: border-box;
 }
 
-h5
-{
-  margin:0px;
-  font-size:1.4em;
-  font-weight:700;
-}
-
-p
-{
-  font-size:12px;
-}
-
-  /* .center
-{
-  height:100vh;
-  width:100vh;
-  display: flex;
-  margin-left: 50px;
-  align-items: center;
-}   */
-
-/* End Non-Essential  */
-
-.property-card
-{
-  height:18em;
-  width:100%;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius:16px;
-  overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-}
-/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
-/* Top Half of card, image. */
-
-.property-image
-{
-  height:6em;
-  width:14em;   
-  padding:1em 2em;
-  position:Absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
-  background-size:cover;
-  background-repeat:no-repeat;
-}
-
-.property-description
-{
-  background-color: #FAFAFC;
-  height:12em;
-  width:14em;
-  position:absolute;
-  bottom:0em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-  
-}
-
-/* Social Icons */
-
-.property-social-icons
-{
-  width:1em;
-  height:1em;
-  background-color:black;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-/* Property Cards Hover States */
-
-.property-card:hover .property-description
-{
-  height:0em;
-  padding:0px 1em;
-}
-.property-card:hover .property-image
-{
-  height:18em;
-}
-
-.property-card:hover .property-social-icons
-{
-  background-color:white;
-}
-
-.property-card:hover .property-social-icons:hover
-{
-  background-color:blue;
-  cursor:pointer;
-}
-
-
-/* Optional
-
-.property-image-title
-{
-text-align:center;
-position:Relative;
-top:30%;
-opacity:0;
-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-color:black;
-font-size:1.2em;
-}
-
-.property-card:hover .property-image-title
-{
-opacity:1;
-}
-
-*/
-*
-{
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-h5
-{
-  margin:0px;
-  font-size:1.4em;
-  font-weight:700;
-}
-
-p
-{
-  font-size:12px;
-}
-
- /*  .center1
-{
-  height:100vh;
-  width:100%;
-  display: flex;
-  margin-left: 10%;
-
-  align-items: center;
-}   */
-
-/* End Non-Essential  */
-
-.property-card1
-{
-  height:18em;
-  width:100%;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius:16px;
-  overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-}
-/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
-/* Top Half of card, image. */
-
-.property-image1
-{
-  height:6em;
-  width:14em;
-  padding:1em 2em;
-  position:Absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZlLcOkntoyB_-Tp1JfghIP-nyU_Wz0fsnQg&usqp=CAU');
-  background-size:cover;
-  background-repeat:no-repeat;
-}
-
-.property-description1
-{
-  background-color: #FAFAFC;
-  height:12em;
-  width:14em;
-  position:absolute;
-  bottom:0em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-  text-align:center;
-}
-
-/* Social Icons */
-
-.property-social-icons1
-{
-  width:1em;
-  height:1em;
-  background-color:black;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-/* Property Cards Hover States */
-
-.property-card1:hover .property-description1
-{
-  height:0em;
-  padding:0px 1em;
-}
-.property-card1:hover .property-image1
-{
-  height:18em;
-}
-
-.property-card1:hover .property-social-icons1
-{
-  background-color:white;
-}
-
-.property-card1:hover .property-social-icons1:hover
-{
-  background-color:blue;
-  cursor:pointer;
-}
-
-
-/* Optional
-
-.property-image-title
-{
-text-align:center;
-position:Relative;
-top:30%;
-opacity:0;
-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-color:black;
-font-size:1.2em;
-}
-
-.property-card:hover .property-image-title
-{
-opacity:1;
-}
-
-*/
-*
-{
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-h5
-{
-  margin:0px;
-  font-size:1.4em;
-  font-weight:700;
-}
-
-p
-{
-  font-size:12px;
-}
-
-  /* .center2
-{
-  height:100vh;
-  width:100%;
-  display: flex;
-  align-items: right;
-  align-items: center;
-}   */
-
-/* End Non-Essential  */
-
-.property-card2
-{
-  height:18em;
-  width:100%; 
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius:16px;
-  overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-}
-/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
-/* Top Half of card, image. */
-
-.property-image2
-{
-  height:6em;
-  width:14em;
-  padding:1em 2em;
-  position:Absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image:url('https://ak.picdn.net/shutterstock/videos/4889393/thumb/1.jpg');
-  background-size:cover;
-  background-repeat:no-repeat;
-}
-
-.property-description2
-{
-  background-color: #FAFAFC;
-  height:12em;
-  width:14em;
-  position:absolute;
-  bottom:0em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-  text-align:center;
-}
-
-/* Social Icons */
-
-.property-social-icons2
-{
-  width:1em;
-  height:1em;
-  background-color:black;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-/* Property Cards Hover States */
-
-.property-card2:hover .property-description2
-{
-  height:0em;
-  padding:0px 1em;
-}
-.property-card2:hover .property-image2
-{
-  height:18em;
-}
-
-.property-card2:hover .property-social-icons2
-{
-  background-color:white;
-}
-
-.property-card2:hover .property-social-icons2:hover
-{
-  background-color:blue;
-  cursor:pointer;
-}
-
-
-/* Optional
-
-.property-image-title
-{
-text-align:center;
-position:Relative;
-top:30%;
-opacity:0;
-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-color:black;
-font-size:1.2em;
-}
-
-.property-card:hover .property-image-title
-{
-opacity:1;
-}
-
-*/
-
 
 .carousal{
   width: 80%;
@@ -494,10 +170,10 @@ opacity:1;
 </style>
   </head>
   <body>
-  
     <div class="top">
-      <h5><b>TECHEVA- Site for Tech Blogs</b></h5>
-      <h2>For the Students,By the Students,Of the Students</h2>
+      <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
+      </h1></center>
+      <h2>For the Students,By the Students,Of the Students🎓📚</h2>
     </div>
   
     
@@ -512,96 +188,60 @@ opacity:1;
     delay="2000"  data-next-button-aria-label="Go to next slide"
     data-previous-button-aria-label="Go to previous slide">
     
-    <amp-img src="images/image1.jpg"
+    <amp-img src="image1.jpg"
     width="450"
     height="350" ></amp-img>
-    <amp-img src="images/image2.jpg"
+    <amp-img src="image2.jpg"
     width="450"
     height="300" ></amp-img>
-    <amp-img src="images/image3.jpg"
+    <amp-img src="image3.jpg"
     width="450"
     height="300"  ></amp-img>
-     <amp-img src="images/image4.jpg"
+     <amp-img src="image4.jpg"
     width="450"
     height="300"  ></amp-img>
     
   </amp-carousel>
 </div>
+<br>
 <div class="a">
   <h1><b>Blog Section</b></h1>
 </div>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-
-<div  class="container">
-  <div style="float: right;" class="col-md-4">
-
-
-<div class="center">
-  <div class="property-card">
-    <a href="#">
-      <div class="property-image">
-        <div class="property-image-title">
-          <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-        </div>
-      </div></a>
-    <div class="property-description">
-      <h5> Card Title </h5>
-      <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
-    </div>
-    <a href="#">Read More
-      <div class="property-social-icons">
-        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+<section class="hero-section">
+  <div class="card-grid">
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+      <div class="card__content">
+        <p class="card__category">Category</p>
+        <h3 class="card__heading">Example Card Heading</h3>
       </div>
     </a>
-  </div>  </div>
-</div>
-
-
-
-<div style="float: right;" class="col-md-4">
-      <div class="center1">
-  <div class="property-card1">
-    <a href="#">
-      <div class="property-image1">
-        <div class="property-image-title1">
-          <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-        </div>
-      </div></a>
-    <div class="property-description1">
-      <h5> Card Title </h5>
-      <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
-    </div>
-    <a href="#">Read more
-      <div class="property-social-icons1">
-        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+      <div class="card__content">
+        <p class="card__category">Category</p>
+        <h3 class="card__heading">Example Card Heading</h3>
       </div>
     </a>
-  </div></div>
-</div>
-
-
-
-<div style="float: right;" class="col-md-4">
-      <div class="center2">
-  <div class="property-card2">
-    <a href="#">
-      <div class="property-image2">
-        <div class="property-image-title2">
-          <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-        </div>
-      </div></a>
-    <div class="property-description2">
-      <h5> Card Title </h5>
-      <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
-    </div>
-    <a href="#">Read More
-      <div class="property-social-icons2">
-        <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+      <div class="card__content">
+        <p class="card__category">Category</p>
+        <h3 class="card__heading">Example Card Heading</h3>
       </div>
     </a>
-  </div></div>
-  </div></div>
-
-
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+      <div class="card__content">
+        <p class="card__category">Category</p>
+        <h3 class="card__heading">Example Card Heading</h3>
+      </div>
+    </a>
+  </div>
+</section>
+<br>
+<br>
   </body>
 </html>
