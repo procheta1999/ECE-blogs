@@ -1,12 +1,14 @@
 <!doctype html>
 <html ⚡>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -14,59 +16,133 @@
     <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
-        .container {
-    padding: 2px 2px 2px;
-    max-width: 100%;
-}
-.container__image{
-    display: inline-block;
+      .container {
+        padding: 2px 2px 2px;
+        max-width: 100%;
+      }
+
+      .container__image {
+        display: inline-block;
         vertical-align: top;
         width: 50%;
         margin: 20px 30px 0 0;
-}
-.container__text{
-    display: inline-block;
+      }
+
+      .container__text {
+        display: inline-block;
         width: 100%;
         font-size: 20px;
-        margin:1rem 1rem 1rem 1rem;
-        padding:2rem 2rem 2rem 2rem;
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 2rem 2rem 2rem 2rem;
+
         @media (max-width: 620px) {
-            width: 100%;
-            font-size:20px;
-}
-
-
-
-        #p{
-            margin:30px 30px 30px 30px;
+          width: 100%;
+          font-size: 20px;
         }
-    /* Add your styles here */
-      #h{
-        font-family: helvetica, arial, sans-serif;
-        margin:0.6em 0.6em 0.6em 0.6em;
-      }
-      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-body {
-  font-family: 'Oswald', sans-serif;
- 
-  display: grid;
-  font-size:20px;
-  flex:1;
-}
 
+
+
+        #p {
+          margin: 30px 30px 30px 30px;
+        }
+
+        /* Add your styles here */
+        #h {
+          font-family: helvetica, arial, sans-serif;
+          margin: 0.6em 0.6em 0.6em 0.6em;
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+        body {
+          font-family: 'Oswald', sans-serif;
+
+          display: grid;
+          font-size: 20px;
+          flex: 1;
+        }
     </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+      }
+
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+    </style><noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
 
     <link rel="canonical" href=".">
     <title>Techeva- NSEC ECE Tech-Blogs!</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
-        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -82,28 +158,36 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="announcements .html">Events<i class="fa fa-star-o" aria-hidden="true"></i></a>
           </li>
-          
+
         </ul>
         <form class="form-inline my-2 my-lg-0">
           Techeva🔭
         </form>
       </div>
     </nav>
-  
+
     <br>
-    <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
-      </h1></center>
-      <hr>
-      <br>
-   
-  <center><h1>A Boring Dystopia</h1></center>
-  <br>
-  
-  <center><h3>- Rudraneel Bhattacharya</h3></center>
-  <center><h3>ECE</h3></center>
-  <br>
-  <div class="container">
-      
+    <center>
+      <h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
+      </h1>
+    </center>
+    <hr>
+    <br>
+
+    <center>
+      <h1>A Boring Dystopia</h1>
+    </center>
+    <br>
+
+    <center>
+      <h3>- Rudraneel Bhattacharya</h3>
+    </center>
+    <center>
+      <h3>ECE</h3>
+    </center>
+    <br>
+    <div class="container">
+
       <div class="container__text">
         <p>
           Lately, a whole bunch of tech giants including the likes of Twitter, Facebook
@@ -113,104 +197,112 @@ body {
         </p>
         <p>
           In the last decade, these companies have grown exponentially to hitherto
-        unimaginable magnitudes, and grow they still do, at ever faster rates, all while
-        gobbling up any and all meaningful competition.
+          unimaginable magnitudes, and grow they still do, at ever faster rates, all while
+          gobbling up any and all meaningful competition.
         </p>
         <p>
           Of course, it’s an open mystery as to how these tech monoliths seemingly get
-        to simultaneously be the arbiters of their own brands of free speech while also
-        enjoying the benefits that come from special laws designed to make them
-        impervious to lawsuits and all scrutiny that comes from widespread abuse of
-        anyone and everyone that dares to speak against the current hot topic, for
-        constitutional rights be damned, we are supreme.
+          to simultaneously be the arbiters of their own brands of free speech while also
+          enjoying the benefits that come from special laws designed to make them
+          impervious to lawsuits and all scrutiny that comes from widespread abuse of
+          anyone and everyone that dares to speak against the current hot topic, for
+          constitutional rights be damned, we are supreme.
         </p>
         <p>
           A recent Twitter hack exposed glaring security flaws in twitter’s internal
-        system. While the perpetrators remain at large as of date, the echoes of the
-        potential hazards posed by rogue entities within and without looms over the
-        world.
+          system. While the perpetrators remain at large as of date, the echoes of the
+          potential hazards posed by rogue entities within and without looms over the
+          world.
         </p>
-        <center><img class="container__image" src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/07/Mark-Zuckerberg-samsung-gear-vr.jpg"></center><br><br>
+        <center><img class="container__image"
+            src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/07/Mark-Zuckerberg-samsung-gear-vr.jpg">
+        </center><br><br>
         <p>
           A recent Twitter hack exposed glaring security flaws in twitter’s internal
-        system. While the perpetrators remain at large as of date, the echoes of the
-        potential hazards posed by rogue entities within and without looms over the
-        world.
+          system. While the perpetrators remain at large as of date, the echoes of the
+          potential hazards posed by rogue entities within and without looms over the
+          world.
         </p>
         <p>
           The hack, for what is known, while absolutely massive, was awfully simple for
-        it’s scale. The world is lucky that the hackers just made off with barely half a
-        million in crypto - and quite possibly billions from the personal chats of some of
-        the world’s richest and most powerful men and women, but hey, if the media
-        wants you to believe otherwise, who are you, a lowly peasant to say otherwise.
-        An alternate reality that could’ve quite possibly sprung out of this hack
-        would’ve been, say, a total stock market crash, or better yet, nuclear
-        Armageddon.
+          it’s scale. The world is lucky that the hackers just made off with barely half a
+          million in crypto - and quite possibly billions from the personal chats of some of
+          the world’s richest and most powerful men and women, but hey, if the media
+          wants you to believe otherwise, who are you, a lowly peasant to say otherwise.
+          An alternate reality that could’ve quite possibly sprung out of this hack
+          would’ve been, say, a total stock market crash, or better yet, nuclear
+          Armageddon.
         </p>
         <p>
           Imagine waking up to see the total world credit system or stock market in
-        disarray because random hackers broke in and sold all sorts of unsavory
-        private messages, or maybe that actually did happen, and said hackers are
-        tightly holding onto stockpiles of all sorts of secret messages as leverage for
-        the highest bidder, which may as well be a three letter agency in the US waging
-        war on another three letter agency; a little sibling rivalry, if you will.
+          disarray because random hackers broke in and sold all sorts of unsavory
+          private messages, or maybe that actually did happen, and said hackers are
+          tightly holding onto stockpiles of all sorts of secret messages as leverage for
+          the highest bidder, which may as well be a three letter agency in the US waging
+          war on another three letter agency; a little sibling rivalry, if you will.
         </p>
         <p>
           Alternatively, imagine waking up only to discover your ethereal remains
-        floating above a world engulfed in hell fire all because some hackers thought
-        it’d be funny to mock a certain <s>un</s>stable Korean Dictator from a certain equally
-        <s>un</s>stable US President’s Twitter - crap. This one actually happened. Without
-        hackers. Well, at least it’s grade A entertainment.
+          floating above a world engulfed in hell fire all because some hackers thought
+          it’d be funny to mock a certain <s>un</s>stable Korean Dictator from a certain equally
+          <s>un</s>stable US President’s Twitter - crap. This one actually happened. Without
+          hackers. Well, at least it’s grade A entertainment.
         </p>
         <p>
           Elsewhere, in one of the unknown alleys of China, kids put together boots and
-        suits for the millionaires and billionaires, who in turn preach to you, the lowly
-        peasant that thou shalt buy their brand of over-the-top, awfully up-marked
-        cosmetics and lifestyle goods or else you’re just not woke enough and probably
-        want to kill... hold on, furiously shuffles deck, &lt;insert perceived minority&gt;!.
+          suits for the millionaires and billionaires, who in turn preach to you, the lowly
+          peasant that thou shalt buy their brand of over-the-top, awfully up-marked
+          cosmetics and lifestyle goods or else you’re just not woke enough and probably
+          want to kill... hold on, furiously shuffles deck, &lt;insert perceived minority&gt;!.
         </p>
         <p>
           Of course, somewhere their masters in turn reenact Nazi Germany for the free
-        slave labor laughs, but no one cares. For the <s>spice</s> money must flow.
+          slave labor laughs, but no one cares. For the <s>spice</s> money must flow.
         </p>
         <p>
           Dare you not question your media masters, for they are your benevolent
-        guardians. Fret not, for all you need to do to achieve salvation is to consume.
-        Consume and forget and believe, don’t question, leave that to the experts, they
-        know better anyways.
+          guardians. Fret not, for all you need to do to achieve salvation is to consume.
+          Consume and forget and believe, don’t question, leave that to the experts, they
+          know better anyways.
         </p>
         <p>
           Was the world, so wide, always this wild? Difficult to answer, for one genuinely
-        would find it hard to argue for, as it would be an awfully malevolent take and
-        too cynical to claim that the developments that have allowed for millions and
-        billions of people all over the globe to escape from the jaws of desolate
-        poverty, gain access to quality education and then some. Yet on the contrary,
-        in pursuit of pure materialistic development, the world has lost track of the
-        fundamental values that made us humans, we have seemingly lost all
-        empathy, and live apathetic lives where the void can only be filled through
-        more and more consumption, which, in turn, is also unquestionable. Our base
-        needs and desires have all but been played up and down through algorithms
-        and such to ensure that when you kneel over, some faceless monolith of a
-        corporation can (and <i>will</i>) tally up <i>exactly</i> what you were worth, and the cycle
-        will repeat, ad infinitum.
+          would find it hard to argue for, as it would be an awfully malevolent take and
+          too cynical to claim that the developments that have allowed for millions and
+          billions of people all over the globe to escape from the jaws of desolate
+          poverty, gain access to quality education and then some. Yet on the contrary,
+          in pursuit of pure materialistic development, the world has lost track of the
+          fundamental values that made us humans, we have seemingly lost all
+          empathy, and live apathetic lives where the void can only be filled through
+          more and more consumption, which, in turn, is also unquestionable. Our base
+          needs and desires have all but been played up and down through algorithms
+          and such to ensure that when you kneel over, some faceless monolith of a
+          corporation can (and <i>will</i>) tally up <i>exactly</i> what you were worth, and the cycle
+          will repeat, ad infinitum.
         </p>
         <p>
           We buy things we don’t need with money we don’t have and let the things that
-        we own end up owning us.
-        Such is the microcosm of our very own dystopia lite.
+          we own end up owning us.
+          Such is the microcosm of our very own dystopia lite.
         </p>
-        
-       
-        
-        
-        
-        
+
+
+
+
+
+
       </div>
-  </div>
-      <br>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    </div>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </body>
 
 </html>
