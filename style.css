@@ -46,7 +46,7 @@ body {
   }
 }
 
-/*********************************************/
+
 img {
   width: 100%;
   transition: all 0.5s;
@@ -199,8 +199,6 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-/*############################footer###############################################*/
 .footer {
   background-color: rgba(21, 82, 153, 1);
 
@@ -383,6 +381,7 @@ li {
   height: 100%;
 }
 
+
 .card-text {
   margin: 2%;
 }
@@ -390,6 +389,42 @@ li {
 .row {
   margin: 2%;
 }
+=======
+.card-text{
+  margin: 0% 0% 0% 2%; /* Fixed small gap on blog.html image cards */
+}
+
+
+.row{
+  margin: 2%;
+}
+.col-sm-4{
+  margin-bottom: 2%;
+}
+
+/* Fixes blog pages not being centered */
+
+.container__text{
+  
+  margin-left: 0rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .container__image {
+    width: 80% !important;
+    height: 50%;
+    margin: 0px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .col-sm-4 {
   margin-bottom: 2%;
