@@ -350,6 +350,22 @@ justify-content: center;
   margin-bottom: 2%;
 }
 
+/* Fixes blog pages not being centered */
+
+.container__text{
+  
+  margin-left: 0rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .container__image {
+    width: 80% !important;
+    height: 50%;
+    margin: 0px !important;
+  }
+}
+
+
 
 
 
