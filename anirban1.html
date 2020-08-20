@@ -1,14 +1,12 @@
 <!doctype html>
 <html ⚡>
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -16,133 +14,59 @@
     <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
-      .container {
-        padding: 2px 2px 2px;
-        max-width: 100%;
-      }
-
-      .container__image {
-        display: inline-block;
+        .container {
+    padding: 2px 2px 2px;
+    max-width: 100%;
+}
+.container__image{
+    display: inline-block;
         vertical-align: top;
         width: 50%;
         margin: 20px 30px 0 0;
-      }
-
-      .container__text {
-        display: inline-block;
+}
+.container__text{
+    display: inline-block;
         width: 100%;
         font-size: 20px;
-        margin: 1rem 1rem 1rem 1rem;
-        padding: 2rem 2rem 2rem 2rem;
-
+        margin:1rem 1rem 1rem 1rem;
+        padding:2rem 2rem 2rem 2rem;
         @media (max-width: 620px) {
-          width: 100%;
-          font-size: 20px;
+            width: 100%;
+            font-size:20px;
+}
+
+
+
+        #p{
+            margin:30px 30px 30px 30px;
         }
-
-      }
-
-      #p {
-        margin: 30px 30px 30px 30px;
-      }
-
-      /* Add your styles here */
-      #h {
+    /* Add your styles here */
+      #h{
         font-family: helvetica, arial, sans-serif;
-        margin: 0.6em 0.6em 0.6em 0.6em;
+        margin:0.6em 0.6em 0.6em 0.6em;
       }
-
       @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+body {
+  font-family: 'Oswald', sans-serif;
+ 
+  display: grid;
+  font-size:20px;
+  flex:1;
+}
 
-      body {
-        font-family: 'Oswald', sans-serif;
-
-        display: grid;
-        font-size: 20px;
-        flex: 1;
-      }
     </style>
-    <style amp-boilerplate>
-      body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both
-      }
-
-      @-webkit-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-moz-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-ms-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-o-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-    </style><noscript>
-      <style amp-boilerplate>
-        body {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          animation: none
-        }
-      </style>
-    </noscript>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <link rel="canonical" href=".">
     <title>Techeva- NSEC ECE Tech-Blogs!</title>
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"
-      style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
+        
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+    
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -158,98 +82,55 @@
           <li class="nav-item">
             <a class="nav-link" href="announcements .html">Events<i class="fa fa-star-o" aria-hidden="true"></i></a>
           </li>
-
+          
         </ul>
         <form class="form-inline my-2 my-lg-0">
           Techeva🔭
         </form>
       </div>
     </nav>
-
+  
     <br>
-    <center>
-      <h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
-      </h1>
-    </center>
-    <hr>
+    <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
+      </h1></center>
+      <hr>
+      <br>
+    <center><h1>Python</h1></center>
     <br>
-    <center>
-      <h1>Python</h1>
-    </center>
-    <br>
-    <center>
-      <h3>-Anirban Raha</h3>
-    </center>
-    <center>
-      <h3>ECE</h3>
-    </center>
+    <center><h3>-Anirban Raha</h3></center>
+    <center><h3>ECE</h3></center>
     <br>
     <div class="container">
-      <center><img class="container__image"
-          src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-      </center>
-      <br>
-      <div class="container__text">
-        <p>Python (not the snake) is one of the world’s leading programming languages . Developed by Guido van Rossum in
-          1991, this interpreted, high-level, general purpose programming language has grown in popularity due its
-          object-oriented nature, code readability and massive range of applications . In 2020, it is arguably even more
-          popular than Java, something that could not have been predicted even a decade earlier .</p>
+        <center><img class="container__image" src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></center>
+        <br>
+        <div class="container__text">
+            <p>Python (not the snake) is one of the world’s leading programming languages . Developed by Guido van Rossum in 1991, this interpreted, high-level, general purpose programming language has grown in popularity due its object-oriented nature, code readability and massive range of applications . In 2020, it is arguably even more popular than Java, something that could not have been predicted even a decade earlier .</p> 
         <p><b>What makes Python the fastest growing programming language ?</b></p>
-        <p>• Easy to learn – Because of its simple syntax and code readability, it is much easier to learn than other
-          object-oriented programming languages like Java and C++ . Python uses whitespace indentation rather than curly
-          brackets or keywords to delimit blocks.</p>
-        <p>• Range – From mini-projects for beginners to large scale implementations in apps, web development and
-          machine learning problems , Python is accessible to beginners as well as master developers .</p>
-        <p>• Availability of numerous libraries – Python’s large standard library is commonly cited as one of it’s
-          greatest strengths . These libraries reduce time and effort and also increase the number of applications of
-          Python in real-world problems .</p>
-        <p>• Web Frameworks – Frameworks such as Django, Flask, Pylons, Pyramid, TurboGears, web2py, Bottle, Zope and
-          Tornado support developers in design and maintenance of complex applications .</p>
-        <p>• Efficiency and Reliability – Developers across the globe vouch for the efficiency and reliability of the
-          language . It provides great platform support and Python applications can be deployed in almost any
-          environment . Python is used in various domains such as data science, machine learning , web development ,
-          mobile apps , desktop apps, etc .</p>
-        <p>• Modern trends – With the growing popularity of machine learning , artificial intelligence , big-data
-          companies ,etc. Python too has found itself growing in popularity with every passing day .</p>
-        <p>• Community Support – With the emergence of Youtube , Coursera , Udemy, etc. People now have a wide array of
-          platforms from which they can learn Python . Developers across the globe exchange ideas and queries using
-          GitHub and StackOverflow . All this has made Python even more accessible than before .</p>
-        <p>• Adopted by Big Companies – Google , Facebook, Paypal, Instagram, DropBox, Uber – these are just a few of
-          the corporate giants that have adopted Python , hence increasing the reputation of the language among the
-          developers . </p>
+    <p>•	Easy to learn – Because of its simple syntax and code readability,  it is much easier to learn than other object-oriented programming languages like Java and C++ . Python uses whitespace indentation rather than curly brackets or keywords to delimit blocks.</p>
+<p>•	Range – From mini-projects for beginners to large scale implementations in apps, web development and machine learning problems , Python is accessible to beginners as well as master developers .</p>
+<p>•	Availability of numerous libraries – Python’s large standard library is commonly cited as one of it’s greatest strengths . These libraries reduce time and effort and also increase the number of applications of Python in real-world problems .</p>
+<p>•	Web Frameworks – Frameworks such as Django, Flask, Pylons, Pyramid, TurboGears, web2py, Bottle, Zope and Tornado support developers in design and maintenance of complex applications .</p>
+<p>•	Efficiency and Reliability – Developers across the globe vouch for the efficiency and reliability of the language . It provides great platform support and Python applications can be deployed in almost any environment . Python is used in various domains such as data science,  machine learning , web development , mobile apps , desktop apps, etc .</p>
+<p>•	Modern trends – With the growing popularity of machine learning , artificial intelligence , big-data companies ,etc. Python too has found itself growing in popularity with every passing day .</p>
+<p>•	Community Support – With the emergence of Youtube , Coursera , Udemy, etc. People now have a wide array of platforms from which they can learn Python . Developers across the globe exchange ideas and queries using GitHub and StackOverflow . All this has made Python even more accessible than before .</p>
+<p>•	Adopted by Big Companies – Google , Facebook, Paypal, Instagram, DropBox, Uber – these are just a few of the corporate giants that have adopted Python , hence increasing the reputation of the language among the developers .  </p></div>
+        <center><img class="container__image" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></center>
+        <div class="container__text">
+         <p>"Python has been an important part of Google since the beginning, and remains so as the system grows and evolves. Today dozens of Google engineers use Python, and we're looking for more people with skills in this language."  
+            -  Peter Norvig, director of search quality at Google,Inc 
+</p>
+<p>"Python is fast enough for our site and allows us to produce maintainable features in record times, with a minimum of developers," 
+    - Cuong Do, Software Architect, YouTube.com
+</p> 
       </div>
-      <center><img class="container__image"
-          src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-      </center>
-      <div class="container__text">
-        <p>"Python has been an important part of Google since the beginning, and remains so as the system grows and
-          evolves. Today dozens of Google engineers use Python, and we're looking for more people with skills in this
-          language."
-          - Peter Norvig, director of search quality at Google,Inc
-        </p>
-        <p>"Python is fast enough for our site and allows us to produce maintainable features in record times, with a
-          minimum of developers,"
-          - Cuong Do, Software Architect, YouTube.com
-        </p>
-      </div>
-      <center><img class="container__image"
-          src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-          width="25%" height="25%"></center>
-      <div class="container__text">
-        <p>Python is unquestionably one of the best programming languages there is and it can be predicted that its
-          popularity will continue to grow, with more and more people being introduced to the world of programming .</p>
-      </div>
+      <center><img class="container__image" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="25%" height="25%"></center>
+        <div class="container__text">
+<p>Python is unquestionably one of the best programming languages there is and it can be predicted that its popularity will continue to grow, with more and more people being introduced to the world of programming .</p>          
+ </div>
     </div>
-    <br>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-      </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-      </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-      </script>
+        <br>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
-
 </html>
