@@ -1,12 +1,14 @@
 <!doctype html>
 <html ⚡>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -14,59 +16,133 @@
     <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
-        .container {
-    padding: 2px 2px 2px;
-    max-width: 100%;
-}
-.container__image{
-    display: inline-block;
+      .container {
+        padding: 2px 2px 2px;
+        max-width: 100%;
+      }
+
+      .container__image {
+        display: inline-block;
         vertical-align: top;
         width: 50%;
         margin: 20px 30px 0 0;
-}
-.container__text{
-    display: inline-block;
+      }
+
+      .container__text {
+        display: inline-block;
         width: 100%;
         font-size: 20px;
-        margin:1rem 1rem 1rem 1rem;
-        padding:2rem 2rem 2rem 2rem;
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 2rem 2rem 2rem 2rem;
+
         @media (max-width: 620px) {
-            width: 100%;
-            font-size:20px;
-}
-
-
-
-        #p{
-            margin:30px 30px 30px 30px;
+          width: 100%;
+          font-size: 20px;
         }
-    /* Add your styles here */
-      #h{
-        font-family: helvetica, arial, sans-serif;
-        margin:0.6em 0.6em 0.6em 0.6em;
-      }
-      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-body {
-  font-family: 'Oswald', sans-serif;
- 
-  display: grid;
-  font-size:20px;
-  flex:1;
-}
 
+
+
+        #p {
+          margin: 30px 30px 30px 30px;
+        }
+
+        /* Add your styles here */
+        #h {
+          font-family: helvetica, arial, sans-serif;
+          margin: 0.6em 0.6em 0.6em 0.6em;
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+        body {
+          font-family: 'Oswald', sans-serif;
+
+          display: grid;
+          font-size: 20px;
+          flex: 1;
+        }
     </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+      }
+
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+    </style><noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
 
     <link rel="canonical" href=".">
     <title>Techeva- NSEC ECE Tech-Blogs!</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
-        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -82,53 +158,110 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="announcements .html">Events<i class="fa fa-star-o" aria-hidden="true"></i></a>
           </li>
-          
+
         </ul>
         <form class="form-inline my-2 my-lg-0">
           Techeva🔭
         </form>
       </div>
     </nav>
-  
+
     <br>
-    <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
-      </h1></center>
-      <hr>
-      <br>
-    <center><h1>Serverless Architecture</h1></center>
+    <center>
+      <h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
+      </h1>
+    </center>
+    <hr>
     <br>
-    <center><h3>-Aditya Banerjee</h3></center>
-    <center><h3>ECE</h3></center>
+    <center>
+      <h1>Serverless Architecture</h1>
+    </center>
+    <br>
+    <center>
+      <h3>-Aditya Banerjee</h3>
+    </center>
+    <center>
+      <h3>ECE</h3>
+    </center>
     <br>
     <div class="container">
-        <center><img class="container__image" src="https://images.unsplash.com/photo-1580106815433-a5b1d1d53d85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></center>
-        <br>
-        <div class="container__text">
-        <p>Serverless architecture is a concept, wherein developers earlier developed functionalities which were dependent on serverside computing can now be developed and hosted on the client side. This eliminates the dependency on serverside components for development.The serverless framework helps to develop and deploy serverless applications by using Cloud Platform services.Every serverless service instance is an independent unit of deployment, for eg. – microservice.It’s a code, deployed in the cloud, that is written to perform a single job.</p>    
-        <p>Serverless computing, in a nutshell, allows developers to define a code function that a cloud service executes as a result of an event.  The code could be Java, Python, C# or a variety of other languages, along with appropriate dependencies, which are grouped (perhaps in a .ZIP file) and uploaded to a storage service, ready to be executed when needed. Some “functions” can also be coded directly into the service via a GUI.The Cloud vendor provides the Function as a Service model that enables the platform to provide the underlying infrastructure (typically a container on an already-provisioned VM or service) and executes the code.</p></div>
-        <center><img class="container__image" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></center>
-        <div class="container__text">
-<p>Serverless is an ideal back-end technology. Obviously, serverless has strengths in analytics, artificial intelligence (AI) and IoT, but there’s nothing to stop it also being used for many of the compute functions we commonly associate with VMs today.</p> 
-<p>•	Application backends (Web & Mobile) - Display a webpage when triggered by an HTTP event, to make API calls to clouds as a result of time, poll or user event.</p> 
-<p>•	Real-time Processing - Includes performing analysis on datasets (either on a regular schedule or when a dataset is uploaded), cleaning up a dataset such as a log or IoT data prior to processing (particularly when that data has to be transmitted)</p>
-<p>•	Workflows and Automation - Automating backups and other daily tasks and processing dataincluding scheduled tasks. </p>
-<p>•	Extending & Integrating Systems - To interact with any other number of services and systems in the enterprise or across enterprises</p>        
+      <center><img class="container__image"
+          src="https://images.unsplash.com/photo-1580106815433-a5b1d1d53d85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+      </center>
+      <br>
+      <div class="container__text">
+        <p>Serverless architecture is a concept, wherein developers earlier developed functionalities which were
+          dependent on serverside computing can now be developed and hosted on the client side. This eliminates the
+          dependency on serverside components for development.The serverless framework helps to develop and deploy
+          serverless applications by using Cloud Platform services.Every serverless service instance is an independent
+          unit of deployment, for eg. – microservice.It’s a code, deployed in the cloud, that is written to perform a
+          single job.</p>
+        <p>Serverless computing, in a nutshell, allows developers to define a code function that a cloud service
+          executes as a result of an event. The code could be Java, Python, C# or a variety of other languages, along
+          with appropriate dependencies, which are grouped (perhaps in a .ZIP file) and uploaded to a storage service,
+          ready to be executed when needed. Some “functions” can also be coded directly into the service via a GUI.The
+          Cloud vendor provides the Function as a Service model that enables the platform to provide the underlying
+          infrastructure (typically a container on an already-provisioned VM or service) and executes the code.</p>
       </div>
-      <center><img class="container__image" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="25%" height="25%"></center>
-        <div class="container__text">
-          <p>PROS:</p>
-<p>•	No server management is necessary as developers never have to deal with the servers. They are managed by the vendor. This can reduce the investment necessary in DevOps, which lowers expenses, and it also frees up developers to create and expand their applications without being constrained by server capacity.</p>
-<p>•	Developers are only charged for the server space they use, reducing cost as in a 'pay-as-you-go' plan, developers are only charged for what they use. Code only runs when backend functions are needed by the serverless application, and the code automatically scales up as needed. Provisioning is dynamic, usually precise, and real-time.</p>
-<p>•	Serverless architectures are inherently scalable since applications built with a serverless infrastructure will scale automatically as the user base grows or usage increases. If a function needs to be run in multiple instances, the vendor's servers will start-up, run, and end them as they are needed, and these are faster spinning up as they often using containers-based models.</p> 
-<br>
-<p>CONS:</p>     
-<p>•	The serverless computing model cannot be stated as the perfect approach due to performance issues. The model itself implies that there will be higher latency in how the compute resources respond to the applications’ requirements. In such cases, it would be better to use allocated virtual servers if performance is the primary requirement.</p>
-<p>•	The debugging and monitoring of serverless computing are tricky as well. As it is typically utilizing a single server resource, the debugging and monitoring activities become extremely difficult.</p>
-<p>•	Around Security practices, when vendors run the entire backend, it may not be possible to fully vet their security, which can especially be a problem for applications that handle personal or sensitive data. Because companies are not assigned their own discrete physical servers, serverless providers will often be running code from several of their customers on a single server at any given time. This issue of sharing machinery with other parties is known as 'multitenancy' and can affect application performance and, if the multi-tenant servers are not configured properly, could result in data exposure.</p></div>
-    </div>
+      <center><img class="container__image"
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+      </center>
+      <div class="container__text">
+        <p>Serverless is an ideal back-end technology. Obviously, serverless has strengths in analytics, artificial
+          intelligence (AI) and IoT, but there’s nothing to stop it also being used for many of the compute functions we
+          commonly associate with VMs today.</p>
+        <p>• Application backends (Web & Mobile) - Display a webpage when triggered by an HTTP event, to make API calls
+          to clouds as a result of time, poll or user event.</p>
+        <p>• Real-time Processing - Includes performing analysis on datasets (either on a regular schedule or when a
+          dataset is uploaded), cleaning up a dataset such as a log or IoT data prior to processing (particularly when
+          that data has to be transmitted)</p>
+        <p>• Workflows and Automation - Automating backups and other daily tasks and processing dataincluding scheduled
+          tasks. </p>
+        <p>• Extending & Integrating Systems - To interact with any other number of services and systems in the
+          enterprise or across enterprises</p>
+      </div>
+      <center><img class="container__image"
+          src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          width="25%" height="25%"></center>
+      <div class="container__text">
+        <p>PROS:</p>
+        <p>• No server management is necessary as developers never have to deal with the servers. They are managed by
+          the vendor. This can reduce the investment necessary in DevOps, which lowers expenses, and it also frees up
+          developers to create and expand their applications without being constrained by server capacity.</p>
+        <p>• Developers are only charged for the server space they use, reducing cost as in a 'pay-as-you-go' plan,
+          developers are only charged for what they use. Code only runs when backend functions are needed by the
+          serverless application, and the code automatically scales up as needed. Provisioning is dynamic, usually
+          precise, and real-time.</p>
+        <p>• Serverless architectures are inherently scalable since applications built with a serverless infrastructure
+          will scale automatically as the user base grows or usage increases. If a function needs to be run in multiple
+          instances, the vendor's servers will start-up, run, and end them as they are needed, and these are faster
+          spinning up as they often using containers-based models.</p>
         <br>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <p>CONS:</p>
+        <p>• The serverless computing model cannot be stated as the perfect approach due to performance issues. The
+          model itself implies that there will be higher latency in how the compute resources respond to the
+          applications’ requirements. In such cases, it would be better to use allocated virtual servers if performance
+          is the primary requirement.</p>
+        <p>• The debugging and monitoring of serverless computing are tricky as well. As it is typically utilizing a
+          single server resource, the debugging and monitoring activities become extremely difficult.</p>
+        <p>• Around Security practices, when vendors run the entire backend, it may not be possible to fully vet their
+          security, which can especially be a problem for applications that handle personal or sensitive data. Because
+          companies are not assigned their own discrete physical servers, serverless providers will often be running
+          code from several of their customers on a single server at any given time. This issue of sharing machinery
+          with other parties is known as 'multitenancy' and can affect application performance and, if the multi-tenant
+          servers are not configured properly, could result in data exposure.</p>
+      </div>
+    </div>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
   </body>
+
 </html>
