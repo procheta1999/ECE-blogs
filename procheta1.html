@@ -1,12 +1,14 @@
 <!doctype html>
 <html ⚡>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -14,59 +16,134 @@
     <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
-        .container {
-    padding: 2px 2px 2px;
-    max-width: 100%;
-}
-.container__image{
-    display: inline-block;
+      .container {
+        padding: 2px 2px 2px;
+        max-width: 100%;
+      }
+
+      .container__image {
+        display: inline-block;
         vertical-align: top;
         width: 50%;
         margin: 20px 30px 0 0;
-}
-.container__text{
-    display: inline-block;
+      }
+
+      .container__text {
+        display: inline-block;
         width: 100%;
         font-size: 20px;
-        margin:1rem 1rem 1rem 1rem;
-        padding:2rem 2rem 2rem 2rem;
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 2rem 2rem 2rem 2rem;
+
         @media (max-width: 620px) {
-            width: 100%;
-            font-size:20px;
-}
-
-
-
-        #p{
-            margin:30px 30px 30px 30px;
+          width: 100%;
+          font-size: 20px;
         }
-    /* Add your styles here */
-      #h{
-        font-family: helvetica, arial, sans-serif;
-        margin:0.6em 0.6em 0.6em 0.6em;
-      }
-      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-body {
-  font-family: 'Oswald', sans-serif;
- 
-  display: grid;
-  font-size:20px;
-  flex:1;
-}
 
+
+      }
+
+      #p {
+        margin: 30px 30px 30px 30px;
+      }
+
+      /* Add your styles here */
+      #h {
+        font-family: helvetica, arial, sans-serif;
+        margin: 0.6em 0.6em 0.6em 0.6em;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+      body {
+        font-family: 'Oswald', sans-serif;
+
+        display: grid;
+        font-size: 20px;
+        flex: 1;
+      }
     </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+      }
+
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+    </style><noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
 
     <link rel="canonical" href=".">
     <title>Techeva- NSEC ECE Tech-Blogs!</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
-        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -82,49 +159,107 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="announcements .html">Events<i class="fa fa-star-o" aria-hidden="true"></i></a>
           </li>
-          
+
         </ul>
         <form class="form-inline my-2 my-lg-0">
           Techeva🔭
         </form>
       </div>
     </nav>
-  
+
     <br>
-    <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
-      </h1></center>
-      <hr>
-      <br>
-    <center><h1>My Journey of Web-Development</h1></center>
+    <center>
+      <h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
+      </h1>
+    </center>
+    <hr>
     <br>
-    <center><h3>-Procheta Bhattacharyya</h3></center>
-    <center><h3>ECE</h3></center>
+    <center>
+      <h1>My Journey of Web-Development</h1>
+    </center>
+    <br>
+    <center>
+      <h3>-Procheta Bhattacharyya</h3>
+    </center>
+    <center>
+      <h3>ECE</h3>
+    </center>
     <br>
     <div class="container">
-        <center><img class="container__image" src="https://images.unsplash.com/photo-1593642632505-1f965e8426e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></center>
-        <br>
-        <div class="container__text">
-            <p>Swami Vivekananda said that there is no age restriction in learning. And I have believed it from the bottom of my heart, since childhood. My journey with technology started with a failure story, surprisingly. The failure story was me failing to fulfil my childhod dream of being a doctor. After my board exams, I appeared for NEET where i failed to get a suitable rank to get into any reputed medical college. My parents didn't want me to drop a year and prepare again, so they did not allow it. Instead, they advised me to opt for engineering. But I never thought of engineering as a career option.</p>
-            <p>But, yeah, at last, I opted for engineering and began my engineering journey in Netaji Subhash Engineering College in the department of Electronics and Communication Engineering in the year 2018. At first,I was pretty confused where to start. And then I came to know of NTPTEL courses,through which students can do courses for acquiring new skills and getting MAR and MOOCS points.</p>
-            <p>Among the courses offered , one was Programming with Python. Now, until that mmoment, Python appeared to me as only a snake and not as name of programming language. So I was pretty surprised on the fact that how can I do programming with snakes. Funny, right ?</p>
-        </div>
-        <center><img class="container__image" src="https://media.giphy.com/media/5xYi3s3qSpEGlPQkAv/giphy.gif"></center>
-        <div class="container__text">
-          <p>Finally, I came to know that Python is a programming language, super easy to understand and implement. But, in my case, the irony was, I, having no prior knowledge in programming(except GW Basic) and being a biology student in +2 years, started with Python, where many people started Python after, they have done programming in C,C++,etc. I started Programminng in Python in NPTEL, but unfortunately, I wasn't able to cope up with the course. But I had some of my basics cleared and also did a Python programming course (basic) in FutureLearn. In my second semester, I was introduced to IoT as a part of the training project of my college. Iot has been interesting to me always. So, I, who knew nothing at the beginning, was working to gather knowledge.</p>
-          <p>IoT was the first domain of technology that I was interested in. And along with it came the world of robotics. In these field, I explored Arduino, its functions, applications and also diverged into the advanced world of IoT. But I, having no knowledge of web development and servers prior to this training, my friend and I used Ubisoft for the server purpose. But, along with the introduction of IoT, I started to gather interest in Web Development.</p>
-          <p>In the semester break, I started learning Python and after that, started learning HTML,MySql and CGI. The first application that I built in web development was a simple bank application using HTML,Python,MySql,CGI.This is the <a href="https://github.com/procheta1999/xyzbank.git" target="_blank">project</a>.</p>
+      <center><img class="container__image"
+          src="https://images.unsplash.com/photo-1593642632505-1f965e8426e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+      </center>
+      <br>
+      <div class="container__text">
+        <p>Swami Vivekananda said that there is no age restriction in learning. And I have believed it from the bottom
+          of my heart, since childhood. My journey with technology started with a failure story, surprisingly. The
+          failure story was me failing to fulfil my childhod dream of being a doctor. After my board exams, I appeared
+          for NEET where i failed to get a suitable rank to get into any reputed medical college. My parents didn't want
+          me to drop a year and prepare again, so they did not allow it. Instead, they advised me to opt for
+          engineering. But I never thought of engineering as a career option.</p>
+        <p>But, yeah, at last, I opted for engineering and began my engineering journey in Netaji Subhash Engineering
+          College in the department of Electronics and Communication Engineering in the year 2018. At first,I was pretty
+          confused where to start. And then I came to know of NTPTEL courses,through which students can do courses for
+          acquiring new skills and getting MAR and MOOCS points.</p>
+        <p>Among the courses offered , one was Programming with Python. Now, until that mmoment, Python appeared to me
+          as only a snake and not as name of programming language. So I was pretty surprised on the fact that how can I
+          do programming with snakes. Funny, right ?</p>
+      </div>
+      <center><img class="container__image" src="https://media.giphy.com/media/5xYi3s3qSpEGlPQkAv/giphy.gif"></center>
+      <div class="container__text">
+        <p>Finally, I came to know that Python is a programming language, super easy to understand and implement. But,
+          in my case, the irony was, I, having no prior knowledge in programming(except GW Basic) and being a biology
+          student in +2 years, started with Python, where many people started Python after, they have done programming
+          in C,C++,etc. I started Programminng in Python in NPTEL, but unfortunately, I wasn't able to cope up with the
+          course. But I had some of my basics cleared and also did a Python programming course (basic) in FutureLearn.
+          In my second semester, I was introduced to IoT as a part of the training project of my college. Iot has been
+          interesting to me always. So, I, who knew nothing at the beginning, was working to gather knowledge.</p>
+        <p>IoT was the first domain of technology that I was interested in. And along with it came the world of
+          robotics. In these field, I explored Arduino, its functions, applications and also diverged into the advanced
+          world of IoT. But I, having no knowledge of web development and servers prior to this training, my friend and
+          I used Ubisoft for the server purpose. But, along with the introduction of IoT, I started to gather interest
+          in Web Development.</p>
+        <p>In the semester break, I started learning Python and after that, started learning HTML,MySql and CGI. The
+          first application that I built in web development was a simple bank application using
+          HTML,Python,MySql,CGI.This is the <a href="https://github.com/procheta1999/xyzbank.git"
+            target="_blank">project</a>.</p>
       </div>
       <center><img class="container__image" src="images/Screenshot (236).png" width="25%" height="25%"></center>
-        <div class="container__text">
-          <p>In m third semester, I came to know of DSC of my college and I applied for position in the web development team of DSC. And to my surprise and utter happiness, I got selected. So from this step onwards, my journey attained an upward slope.And I started learning frontend web development properly, starting with HTML,CSS,JS, Bootstrap. Still my skills required polishing. And I began actually polishing my skills from fourth semester onwards, when I got a chance to hold forums on web development forums in my own college. Then I started exploring web development more and more. On the way I learnt AMP-HTML and made some cool simple webpages on the way.</p>
-          <p>Before this, I didn't have proper knowledge of responsive web pages. So I learnt using media-query and more to make my web-pages responsive. My big break in web-development when DSC NSEC decided to build up a blog website and Anubhav Singh suggested me to work it on Next.js. So I started building the webpage(it is still in progress now) along with my some of my friends , on Next.js,Redux,Firebase,Material UI( and it was literally my first time using them) and I came to know and learn a lot of things in this process. And added to that, my department also started the technical community "Electronika", where my department, recognizing my web development skills, gave me the resposnsibilty of being the lead of the Web D domain of the tech community. And I, along with my team, set up the website for ECE Tech-Blogs <a href="tech-eva.live" target="_blank">tech-eva.live</a>.</p>
-          <p>So this is my story. I love engineering . I am still struggle with bugs in  my code and I think, in this way, people learn. So I am still a learner.</p>
-          <p>If you want to know more about me, you can check my <a href="https://procheta1999.vercel.app/">portfolio</a> and my <a href="https://github.com/procheta1999" target="_blank">Github profile</a> and my <a href="https://www.linkedin.com/in/procheta-bhattacharyya-18890818b/" tsrget="_blank">Linkedin profile</a>.</p>
+      <div class="container__text">
+        <p>In m third semester, I came to know of DSC of my college and I applied for position in the web development
+          team of DSC. And to my surprise and utter happiness, I got selected. So from this step onwards, my journey
+          attained an upward slope.And I started learning frontend web development properly, starting with HTML,CSS,JS,
+          Bootstrap. Still my skills required polishing. And I began actually polishing my skills from fourth semester
+          onwards, when I got a chance to hold forums on web development forums in my own college. Then I started
+          exploring web development more and more. On the way I learnt AMP-HTML and made some cool simple webpages on
+          the way.</p>
+        <p>Before this, I didn't have proper knowledge of responsive web pages. So I learnt using media-query and more
+          to make my web-pages responsive. My big break in web-development when DSC NSEC decided to build up a blog
+          website and Anubhav Singh suggested me to work it on Next.js. So I started building the webpage(it is still in
+          progress now) along with my some of my friends , on Next.js,Redux,Firebase,Material UI( and it was literally
+          my first time using them) and I came to know and learn a lot of things in this process. And added to that, my
+          department also started the technical community "Electronika", where my department, recognizing my web
+          development skills, gave me the resposnsibilty of being the lead of the Web D domain of the tech community.
+          And I, along with my team, set up the website for ECE Tech-Blogs <a href="tech-eva.live"
+            target="_blank">tech-eva.live</a>.</p>
+        <p>So this is my story. I love engineering . I am still struggle with bugs in my code and I think, in this way,
+          people learn. So I am still a learner.</p>
+        <p>If you want to know more about me, you can check my <a href="https://procheta1999.vercel.app/">portfolio</a>
+          and my <a href="https://github.com/procheta1999" target="_blank">Github profile</a> and my <a
+            href="https://www.linkedin.com/in/procheta-bhattacharyya-18890818b/" tsrget="_blank">Linkedin profile</a>.
+        </p>
       </div>
     </div>
-        <br>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
   </body>
+
 </html>

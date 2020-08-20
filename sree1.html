@@ -1,12 +1,14 @@
 <!doctype html>
 <html ⚡>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -14,59 +16,134 @@
     <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
-        .container {
-    padding: 2px 2px 2px;
-    max-width: 100%;
-}
-.container__image{
-    display: inline-block;
+      .container {
+        padding: 2px 2px 2px;
+        max-width: 100%;
+      }
+
+      .container__image {
+        display: inline-block;
         vertical-align: top;
         width: 50%;
         margin: 20px 30px 0 0;
-}
-.container__text{
-    display: inline-block;
+      }
+
+      .container__text {
+        display: inline-block;
         width: 100%;
         font-size: 20px;
-        margin:1rem 1rem 1rem 1rem;
-        padding:2rem 2rem 2rem 2rem;
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 2rem 2rem 2rem 2rem;
+
         @media (max-width: 620px) {
-            width: 100%;
-            font-size:20px;
-}
-
-
-
-        #p{
-            margin:30px 30px 30px 30px;
+          width: 100%;
+          font-size: 20px;
         }
-    /* Add your styles here */
-      #h{
-        font-family: helvetica, arial, sans-serif;
-        margin:0.6em 0.6em 0.6em 0.6em;
-      }
-      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-body {
-  font-family: 'Oswald', sans-serif;
- 
-  display: grid;
-  font-size:20px;
-  flex:1;
-}
 
+
+      }
+
+      #p {
+        margin: 30px 30px 30px 30px;
+      }
+
+      /* Add your styles here */
+      #h {
+        font-family: helvetica, arial, sans-serif;
+        margin: 0.6em 0.6em 0.6em 0.6em;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+      body {
+        font-family: 'Oswald', sans-serif;
+
+        display: grid;
+        font-size: 20px;
+        flex: 1;
+      }
     </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+      }
+
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+    </style><noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
 
     <link rel="canonical" href=".">
     <title>Techeva- NSEC ECE Tech-Blogs!</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
-        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -82,44 +159,78 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="announcements .html">Events<i class="fa fa-star-o" aria-hidden="true"></i></a>
           </li>
-          
+
         </ul>
         <form class="form-inline my-2 my-lg-0">
           Techeva🔭
         </form>
       </div>
     </nav>
-  
+
     <br>
-    <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
-      </h1></center>
-      <hr>
-      <br>
-    <center><h1>How IoT came into existence</h1></center>
+    <center>
+      <h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
+      </h1>
+    </center>
+    <hr>
     <br>
-    <center><h3>-Sreeparna Biswas</h3></center>
-    <center><h3>ECE</h3></center>
+    <center>
+      <h1>How IoT came into existence</h1>
+    </center>
+    <br>
+    <center>
+      <h3>-Sreeparna Biswas</h3>
+    </center>
+    <center>
+      <h3>ECE</h3>
+    </center>
     <br>
     <div class="container">
-        <center><img class="container__image" src="images/sree.jpg"></center>
-        <br>
-        <div class="container__text">
-            <p>Now a days, more or less we all are familiar of Internet of Things (IoT). Tech-fest, tech-events, are incomplete without the involvement of IoT. It is one of the popular concepts that has been widely accepted and applied by the technical world for last 10 years.</p>
-        <p>The actual idea of connected devices emerged, at least since the 70s. At that time, the idea was often called “embedded internet” or “pervasive computing”. The Internet of Things term is coined by Kevin Ashton, the executive director of the Auto-ID Center in the year of 1999. He stated that, "I could be wrong, but I'm fairly sure the phrase "Internet of Things" started life as the title of a presentation I made at Procter & Gamble in 1999. Linking the new idea of RFID in P&G's supply chain to the then-red-hot topic of the Internet was more than just a good way to get executive attention. It summed up an important insight which is still often misunderstood."</p>
-    </div>
-        <center><img class="container__image" src="data:image/jpeg;base64,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"></center>
-        <div class="container__text">
-    <p>In the year of 1990 John Romkey created a toaster that could be turned on and off over the Internet which was considered to be the first IoT device. The toaster was connected to a computer with TCP/IP networking. In between 2003 and 2004 implementation of projects like Cooltown, Internet0, and the Disappearing Computer started taking place, and the Internet of Things term starts to appear in book titles for the first time. The growth of smartphones, tablet PCs, etc the number of devices connected to the Internet increased to around 12 billion in 2010. Within the next year many networking and technology companies produced large educational and marketing initiatives on the topic, hardware platforms matured and made the IoT accessible to DIY'ers taking interest in the topic.</p> 
+      <center><img class="container__image" src="images/sree.jpg"></center>
+      <br>
+      <div class="container__text">
+        <p>Now a days, more or less we all are familiar of Internet of Things (IoT). Tech-fest, tech-events, are
+          incomplete without the involvement of IoT. It is one of the popular concepts that has been widely accepted and
+          applied by the technical world for last 10 years.</p>
+        <p>The actual idea of connected devices emerged, at least since the 70s. At that time, the idea was often called
+          “embedded internet” or “pervasive computing”. The Internet of Things term is coined by Kevin Ashton, the
+          executive director of the Auto-ID Center in the year of 1999. He stated that, "I could be wrong, but I'm
+          fairly sure the phrase "Internet of Things" started life as the title of a presentation I made at Procter &
+          Gamble in 1999. Linking the new idea of RFID in P&G's supply chain to the then-red-hot topic of the Internet
+          was more than just a good way to get executive attention. It summed up an important insight which is still
+          often misunderstood."</p>
+      </div>
+      <center><img class="container__image"
+          src="data:image/jpeg;base64,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">
+      </center>
+      <div class="container__text">
+        <p>In the year of 1990 John Romkey created a toaster that could be turned on and off over the Internet which was
+          considered to be the first IoT device. The toaster was connected to a computer with TCP/IP networking. In
+          between 2003 and 2004 implementation of projects like Cooltown, Internet0, and the Disappearing Computer
+          started taking place, and the Internet of Things term starts to appear in book titles for the first time. The
+          growth of smartphones, tablet PCs, etc the number of devices connected to the Internet increased to around 12
+          billion in 2010. Within the next year many networking and technology companies produced large educational and
+          marketing initiatives on the topic, hardware platforms matured and made the IoT accessible to DIY'ers taking
+          interest in the topic.</p>
 
       </div>
       <center><img class="container__image" src="images/sree1.png" width="25%" height="25%"></center>
-        <div class="container__text">
-<p>In this way, with time Internet of Things continues to grow and it's adoption across end-user industries, such as manufacturing, automotive, and healthcare, is driving the market’s growth positively. The global IoT market is expected to reach a value around twelve hundred billion by coming 4 to 5 years.</p>          
+      <div class="container__text">
+        <p>In this way, with time Internet of Things continues to grow and it's adoption across end-user industries,
+          such as manufacturing, automotive, and healthcare, is driving the market’s growth positively. The global IoT
+          market is expected to reach a value around twelve hundred billion by coming 4 to 5 years.</p>
       </div>
     </div>
-        <br>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
   </body>
+
 </html>

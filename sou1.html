@@ -1,12 +1,14 @@
 <!doctype html>
 <html ⚡>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -14,59 +16,134 @@
     <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
-        .container {
-    padding: 2px 2px 2px;
-    max-width: 100%;
-}
-.container__image{
-    display: inline-block;
+      .container {
+        padding: 2px 2px 2px;
+        max-width: 100%;
+      }
+
+      .container__image {
+        display: inline-block;
         vertical-align: top;
         width: 50%;
         margin: 20px 30px 0 0;
-}
-.container__text{
-    display: inline-block;
+      }
+
+      .container__text {
+        display: inline-block;
         width: 100%;
         font-size: 20px;
-        margin:1rem 1rem 1rem 1rem;
-        padding:2rem 2rem 2rem 2rem;
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 2rem 2rem 2rem 2rem;
+
         @media (max-width: 620px) {
-            width: 100%;
-            font-size:20px;
-}
-
-
-
-        #p{
-            margin:30px 30px 30px 30px;
+          width: 100%;
+          font-size: 20px;
         }
-    /* Add your styles here */
-      #h{
-        font-family: helvetica, arial, sans-serif;
-        margin:0.6em 0.6em 0.6em 0.6em;
-      }
-      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-body {
-  font-family: 'Oswald', sans-serif;
- 
-  display: grid;
-  font-size:20px;
-  flex:1;
-}
 
+
+      }
+
+      #p {
+        margin: 30px 30px 30px 30px;
+      }
+
+      /* Add your styles here */
+      #h {
+        font-family: helvetica, arial, sans-serif;
+        margin: 0.6em 0.6em 0.6em 0.6em;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+      body {
+        font-family: 'Oswald', sans-serif;
+
+        display: grid;
+        font-size: 20px;
+        flex: 1;
+      }
     </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+      }
+
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+    </style><noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
 
     <link rel="canonical" href=".">
     <title>Techeva- NSEC ECE Tech-Blogs!</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
-        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -82,41 +159,72 @@ body {
           <li class="nav-item">
             <a class="nav-link" href="announcements .html">Events<i class="fa fa-star-o" aria-hidden="true"></i></a>
           </li>
-          
+
         </ul>
         <form class="form-inline my-2 my-lg-0">
           Techeva🔭
         </form>
       </div>
     </nav>
-  
+
     <br>
-    <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
-      </h1></center>
-      <hr>
-      <br>
-    <center><h1>Why “Hello, World” is the first program for beginners?</h1></center>
+    <center>
+      <h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
+      </h1>
+    </center>
+    <hr>
     <br>
-    <center><h3>-Souhardhya Paul</h3></center>
-    <center><h3>ECE</h3></center>
+    <center>
+      <h1>Why “Hello, World” is the first program for beginners?</h1>
+    </center>
+    <br>
+    <center>
+      <h3>-Souhardhya Paul</h3>
+    </center>
+    <center>
+      <h3>ECE</h3>
+    </center>
     <br>
     <div class="container">
-        <center><img class="container__image" src="images/hello.png"></center>
-        <br>
-        <div class="container__text">
-           <p>Almost anyone who has ever tried to learn a programming language has written – “Hello, World” program as their first task. Not only programmers but also persons working with a markup language like HTML have used “Hello, World” as their first task. Many times, we’ve thought the reason but never got to the root.</p>
-        <p>Traditionally, “Hello, World” programs are used to give a glimpse of minimal coding syntax required to achieve simple tasks like printing text on screen or console. "Hello, World" acts as a basic check for setup for those who used the language for the first time, it makes sure the framework/compiler/interpreter is properly installed and the user can continue to work. For a complete beginner running the first task like “Hello, World” can act as an Icebreaker. Printing text is still the most common method of debugging errors.</p></div>
-        <div class="container__text">
-          <p>Now we got the reason for running a simple task like printing text on the console as the first task, but why only “Hello, World” is used as the sample text for the first text? Well, "Hello, World" is acting as a greeting to the world of coding of that language. There are already people working with the language and they form a world,  when you’re starting for the first time you are giving a greeting to that world of people as you’re entering into that world for the first time, same as we give greeting to new people in a room.</p>
-      <p>Above all, “Hello, World” is simple. That’s why it is so often used as a barometer of program success. If Hello World does not work effectively within the framework, then it is likely that other, more complex programs will also fail. This two-word phrase has big implications for the field of computer science. With “Hello, World” as a foundation, novice programmers can easily understand computer science principles or elements. And professionals with years of coding experience can use it to learn how a given programming language works, especially in terms of structure and syntax. With applications at all skill levels and in almost every language, there is a long history behind such a short program.</p>
-    <p>Hackers also use “Hello, World” as a proof of concept that arbitrary code can be executed in that part through an exploit where system programmer does not intent code to be executed.
-        One more popular use of “Hello, World” is as a basis of comparison. Programmers can compare the size of the executable achieving the same task.
-        </p></div>
-      <center><img class="container__image" src="https://images.unsplash.com/photo-1568144628871-ccbb00fc297c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="25%" height="25%"></center>
-        <div class="container__text">
-          <p>Here’s what “Hello, World” look like in some the most popular programming languages currently in use –</p>
-          <p><b>Java</b></p>
-          <p><code><pre>class HelloWorld {
+      <center><img class="container__image" src="images/hello.png"></center>
+      <br>
+      <div class="container__text">
+        <p>Almost anyone who has ever tried to learn a programming language has written – “Hello, World” program as
+          their first task. Not only programmers but also persons working with a markup language like HTML have used
+          “Hello, World” as their first task. Many times, we’ve thought the reason but never got to the root.</p>
+        <p>Traditionally, “Hello, World” programs are used to give a glimpse of minimal coding syntax required to
+          achieve simple tasks like printing text on screen or console. "Hello, World" acts as a basic check for setup
+          for those who used the language for the first time, it makes sure the framework/compiler/interpreter is
+          properly installed and the user can continue to work. For a complete beginner running the first task like
+          “Hello, World” can act as an Icebreaker. Printing text is still the most common method of debugging errors.
+        </p>
+      </div>
+      <div class="container__text">
+        <p>Now we got the reason for running a simple task like printing text on the console as the first task, but why
+          only “Hello, World” is used as the sample text for the first text? Well, "Hello, World" is acting as a
+          greeting to the world of coding of that language. There are already people working with the language and they
+          form a world, when you’re starting for the first time you are giving a greeting to that world of people as
+          you’re entering into that world for the first time, same as we give greeting to new people in a room.</p>
+        <p>Above all, “Hello, World” is simple. That’s why it is so often used as a barometer of program success. If
+          Hello World does not work effectively within the framework, then it is likely that other, more complex
+          programs will also fail. This two-word phrase has big implications for the field of computer science. With
+          “Hello, World” as a foundation, novice programmers can easily understand computer science principles or
+          elements. And professionals with years of coding experience can use it to learn how a given programming
+          language works, especially in terms of structure and syntax. With applications at all skill levels and in
+          almost every language, there is a long history behind such a short program.</p>
+        <p>Hackers also use “Hello, World” as a proof of concept that arbitrary code can be executed in that part
+          through an exploit where system programmer does not intent code to be executed.
+          One more popular use of “Hello, World” is as a basis of comparison. Programmers can compare the size of the
+          executable achieving the same task.
+        </p>
+      </div>
+      <center><img class="container__image"
+          src="https://images.unsplash.com/photo-1568144628871-ccbb00fc297c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          width="25%" height="25%"></center>
+      <div class="container__text">
+        <p>Here’s what “Hello, World” look like in some the most popular programming languages currently in use –</p>
+        <p><b>Java</b></p>
+        <p><code><pre>class HelloWorld {
               <br>
         public static void main(String[] args) {
                         <br>
@@ -124,41 +232,55 @@ body {
             <br>
             }}
             </pre></code></p>
-            <p><b>Python</b></p>
-            <p><code>print("Hello, world!")</code></p>
-            <p><b>Bash</b></p>
-            <p><code>echo "Hello, World"</code></p>
-            <p><b>C++</b></p>
-            <p><pre><code>	
+        <p><b>Python</b></p>
+        <p><code>print("Hello, world!")</code></p>
+        <p><b>Bash</b></p>
+        <p><code>echo "Hello, World"</code></p>
+        <p><b>C++</b></p>
+        <p>
+        <pre><code>	
 #include 
 int main()
 {
     std::cout << "Hello, world!";
     return 0;
 }
-                </code></pre></p>
-                <p><b>C</b></p>
-                <p><pre><code>
+                </code></pre>
+        </p>
+        <p><b>C</b></p>
+        <p>
+        <pre><code>
 #include 
 int main(void)
 {
 	puts("Hello, world!");
 }
 
-                                    </code></pre></p>
-                                    <p><b>JavaScript</b></p>
-                                    <p><code>document.write('Hello, world!');</code></p>
-                                    <p><b>Processing</b></p>
-                                    <p><code>void setup(){
+                                    </code></pre>
+        </p>
+        <p><b>JavaScript</b></p>
+        <p><code>document.write('Hello, world!');</code></p>
+        <p><b>Processing</b></p>
+        <p><code>void setup(){
                                         	  println("Hello, world!");
                                         	}
                                         </code></p>
-                                        <p>If you find the article interesting do revert back to me through <a href="https://www.linkedin.com/in/hexadecimalcoder/" target="_blank">LinkedIn</a> or <a href="mailto:souhardhyapaul1999@gmail.com" target="_blank">Email</a>. You can follow me on <a href="https://github.com/hexadecimalcoder">GitHub</a>. I would be happy to receive feedback upon this.</p>
+        <p>If you find the article interesting do revert back to me through <a
+            href="https://www.linkedin.com/in/hexadecimalcoder/" target="_blank">LinkedIn</a> or <a
+            href="mailto:souhardhyapaul1999@gmail.com" target="_blank">Email</a>. You can follow me on <a
+            href="https://github.com/hexadecimalcoder">GitHub</a>. I would be happy to receive feedback upon this.</p>
       </div>
     </div>
-        <br>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
   </body>
+
 </html>
