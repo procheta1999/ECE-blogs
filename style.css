@@ -340,8 +340,9 @@ justify-content: center;
   height: 100%;
 }
 .card-text{
-  margin: 2%;
+  margin: 0% 0% 0% 2%; /* Fixed small gap on blog.html image cards */
 }
+
 
 .row{
   margin: 2%;
