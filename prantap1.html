@@ -1,14 +1,12 @@
 <!doctype html>
 <html ⚡>
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -16,134 +14,59 @@
     <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
-      .container {
-        padding: 2px 2px 2px;
-        max-width: 100%;
-      }
-
-      .container__image {
-        display: inline-block;
+        .container {
+    padding: 2px 2px 2px;
+    max-width: 100%;
+}
+.container__image{
+    display: inline-block;
         vertical-align: top;
         width: 50%;
         margin: 20px 30px 0 0;
-      }
-
-      .container__text {
-        display: inline-block;
+}
+.container__text{
+    display: inline-block;
         width: 100%;
         font-size: 20px;
-        margin: 1rem 1rem 1rem 1rem;
-        padding: 2rem 2rem 2rem 2rem;
-
+        margin:1rem 1rem 1rem 1rem;
+        padding:2rem 2rem 2rem 2rem;
         @media (max-width: 620px) {
-          width: 100%;
-          font-size: 20px;
+            width: 100%;
+            font-size:20px;
+}
+
+
+
+        #p{
+            margin:30px 30px 30px 30px;
         }
-
-
-      }
-
-      #p {
-        margin: 30px 30px 30px 30px;
-      }
-
-      /* Add your styles here */
-      #h {
+    /* Add your styles here */
+      #h{
         font-family: helvetica, arial, sans-serif;
-        margin: 0.6em 0.6em 0.6em 0.6em;
+        margin:0.6em 0.6em 0.6em 0.6em;
       }
-
       @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+body {
+  font-family: 'Oswald', sans-serif;
+ 
+  display: grid;
+  font-size:20px;
+  flex:1;
+}
 
-      body {
-        font-family: 'Oswald', sans-serif;
-
-        display: grid;
-        font-size: 20px;
-        flex: 1;
-      }
     </style>
-    <style amp-boilerplate>
-      body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both
-      }
-
-      @-webkit-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-moz-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-ms-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @-o-keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-
-      @keyframes -amp-start {
-        from {
-          visibility: hidden
-        }
-
-        to {
-          visibility: visible
-        }
-      }
-    </style><noscript>
-      <style amp-boilerplate>
-        body {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          animation: none
-        }
-      </style>
-    </noscript>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <link rel="canonical" href=".">
     <title>Techeva- NSEC ECE Tech-Blogs!</title>
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"
-      style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%); color:#ffffff ;">
+        
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+    
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -159,107 +82,62 @@
           <li class="nav-item">
             <a class="nav-link" href="announcements .html">Events<i class="fa fa-star-o" aria-hidden="true"></i></a>
           </li>
-
+          
         </ul>
         <form class="form-inline my-2 my-lg-0">
           Techeva🔭
         </form>
       </div>
     </nav>
-
+  
     <br>
-    <center>
-      <h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
-      </h1>
-    </center>
-    <hr>
+    <center><h1 id="h">Techeva- Site for Tech-Blogs ! 🔭
+      </h1></center>
+      <hr>
+      <br>
+    <center><h1>Introduction to Hyperconvergence </h1></center>
     <br>
-    <center>
-      <h1>Introduction to Hyperconvergence </h1>
-    </center>
-    <br>
-
-    <center>
-      <h3>- Prantap Nag</h3>
-    </center>
-    <center>
-      <h3>ECE</h3>
-    </center>
+    
+    <center><h3>- Prantap Nag</h3></center>
+    <center><h3>ECE</h3></center>
     <br>
     <div class="container">
+        
+        <br>
+        <div class="container__text">
+            
+                <p>With the web explosion of 90s, infrastructure with server-SAN and storage networks was introduced, featuring independent modules that could be updated or changed without effecting other layers. This infrastructure revolutionized IT departments. But now, in the era of hybrid cloud, 3-tier architecture can no longer keep up with IT needs. Its complex, unwieldly, doesn’t provide a firm foundation for DevOps and can’t scale with the magnitude it used to. Hence this led to the birth of the Hyperconvergence Infrastructure (HCI).</p>
+                <p>Hyper-converged infrastructure (HCI) combines common data centre hardware using locally attached storage resources with intelligent software to create flexible building blocks that replace legacy infrastructure consisting of separate servers, storage networks, and storage arrays. Benefits include lower TCO, increased performance, and greater productivity within IT teams.</p> 
+                <p>Going a step further, the components are brought together, which appear as a single entity to the user through the creation of clusters of nodes. In a hyperconverged environment, the components cannot be separated. The software-defined elements are implemented virtually, with seamless integration into the hypervisor environment. </p>
+                
+        </div>
 
-      <br>
-      <div class="container__text">
-
-        <p>With the web explosion of 90s, infrastructure with server-SAN and storage networks was introduced, featuring
-          independent modules that could be updated or changed without effecting other layers. This infrastructure
-          revolutionized IT departments. But now, in the era of hybrid cloud, 3-tier architecture can no longer keep up
-          with IT needs. Its complex, unwieldly, doesn’t provide a firm foundation for DevOps and can’t scale with the
-          magnitude it used to. Hence this led to the birth of the Hyperconvergence Infrastructure (HCI).</p>
-        <p>Hyper-converged infrastructure (HCI) combines common data centre hardware using locally attached storage
-          resources with intelligent software to create flexible building blocks that replace legacy infrastructure
-          consisting of separate servers, storage networks, and storage arrays. Benefits include lower TCO, increased
-          performance, and greater productivity within IT teams.</p>
-        <p>Going a step further, the components are brought together, which appear as a single entity to the user
-          through the creation of clusters of nodes. In a hyperconverged environment, the components cannot be
-          separated. The software-defined elements are implemented virtually, with seamless integration into the
-          hypervisor environment. </p>
-
-      </div>
-
-      <center><img class="container__image"
-          src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/products/hyper-converged-infrastructure/vmw-hci-prod-overview-vid.jpg">
-      </center>
-      <div class="container__text">
-        <p><b>Hyperconvergence Infrastructure consists of two main components- </b></p>
-        <p>• <b>The distributed plane </b>runs across a cluster of nodes delivering storage, virtualization, and
-          networking services for guest applications—whether they’re VMs or container-based apps.</p>
-        <p>• <b>The management plane</b> lets one easily administer HCI resources from one place and one view and
-          eliminates the need for separate management solutions for servers, storage networks, storage, and
-          virtualization.</p>
-
-        <p>Nearly all modern hyperconverged infrastructure solutions are 100% software-defined, with no dependency on
-          proprietary hardware. Each HCI node in a cluster runs a hypervisor (Nutanix AHV, VMware ESXi , or Microsoft
-          Hyper-V), and the HCI control features run as a separate virtual machine on every node, forming a fully
-          distributed fabric that can scale resources with the addition of new nodes.</p>
-
-
-      </div>
-
-
-
-
-
-      <center><img class="container__image"
-          src="https://www.nutanix.com/content/dam/nutanix/images/thumb-hyperconverged-infrastructure-video.jpg"
-          width="25%" height="25%"></center>
-      <div class="container__text">
-        <p><b>Benefits of Hyperconverged Infrastructure include: –</b></p>
-        <p><b>• Turnkey Infrastructure - </b>Integrated server, storage, networking and virtualization resources along
-          with end-to-end systems management and operations management capabilities.</p>
-        <p><b>• Fast Deployment – </b>Deploy infrastructure in minutes, so IT teams can elevate their focus to the
-          applications and services powering the business. </p>
-        <p><b>• 100% software Driven – </b>Supports a wide variety of different hardware platforms – including three of
-          the four most popular server platforms in the world.</p>
-        <p><b>• Superior Performance and Resilience- </b>Hyperconverged software running on each node distributes all
-          operating functions across the cluster.</p>
-        <p><b>• Unprecedented Flexibility- </b>A single cluster can have unlimited nodes, with node types having
-          differing amounts of storage, CPU and memory resources, so you can run multiple workloads with maximum
-          efficiency.</p>
-
-        <p>Enterprise IT teams today are looking for ways to deliver on-premises IT services with the speed and
-          operational efficiency of public cloud services such as Amazon Web Services (AWS), Microsoft Azure, and Google
-          Cloud. A comprehensive enterprise cloud platform bridges the gap between traditional infrastructure and public
-          cloud services—and hyperconvergence is at the core of an enterprise or hybrid cloud. The simplicity and
-          flexibility of hyperconverged infrastructure is also driving many companies to repatriate their workloads from
-          the public cloud back on-premises.</p>
-        <p>Today, mission-critical applications have to deal with demanding workloads that fluctuate based on real-time
-          interactions between users and machines. The magnitude of workloads, unimaginable in the past, are now getting
-          into the forefront like Big Data, IoT, Machine Learning, and Artificial Intelligence. These workloads provide
-          business advantages such as operational efficiencies and competitive edge by delivering actionable insights,
-          but an infrastructure that has inherent scalability is required to handle these workloads. Hyperconvergence
-          exactly fits this requirement. WAN latency, which was dreaded earlier with Tier 1 workloads, is no more a
-          concern, thanks to hyperconvergence.</p>
+        <center><img class="container__image" src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/products/hyper-converged-infrastructure/vmw-hci-prod-overview-vid.jpg"></center>
+        <div class="container__text">        
+                <p><b>Hyperconvergence Infrastructure consists of two main components- </b></p>
+                <p>•	<b>The distributed plane </b>runs across a cluster of nodes delivering storage, virtualization, and networking services for guest applications—whether they’re VMs or container-based apps.</p>
+                <p>•	<b>The management plane</b> lets one easily administer HCI resources from one place and one view and eliminates the need for separate management solutions for servers, storage networks, storage, and virtualization.</p>
+            
+                <p>Nearly all modern hyperconverged infrastructure solutions are 100% software-defined, with no dependency on proprietary hardware. Each HCI node in a cluster runs a hypervisor (Nutanix AHV, VMware ESXi , or Microsoft Hyper-V), and the HCI control features run as a separate virtual machine on every node, forming a fully distributed fabric that can scale resources with the addition of new nodes.</p>
+            
+            
+            </div>
+       
+        
+         
+    
+    
+      <center><img class="container__image" src="https://www.nutanix.com/content/dam/nutanix/images/thumb-hyperconverged-infrastructure-video.jpg" width="25%" height="25%"></center>
+        <div class="container__text">
+            <p><b>Benefits of Hyperconverged Infrastructure include: –</b></p>
+            <p><b>•	Turnkey Infrastructure - </b>Integrated server, storage, networking and virtualization resources along with end-to-end systems management and operations management capabilities.</p>
+            <p><b>•	Fast Deployment – </b>Deploy infrastructure in minutes, so IT teams can elevate their focus to the applications and services powering the business. </p>
+            <p><b>•	100% software Driven – </b>Supports a wide variety of different hardware platforms – including three of the four most popular server platforms in the world.</p>
+            <p><b>•	Superior Performance and Resilience- </b>Hyperconverged software running on each node distributes all operating functions across the cluster.</p> 
+            <p><b>•	Unprecedented Flexibility- </b>A single cluster can have unlimited nodes, with node types having differing amounts of storage, CPU and memory resources, so you can run multiple workloads with maximum efficiency.</p> 
+            
+            <p>Enterprise IT teams today are looking for ways to deliver on-premises IT services with the speed and operational efficiency of public cloud services such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud. A comprehensive enterprise cloud platform bridges the gap between traditional infrastructure and public cloud services—and hyperconvergence is at the core of an enterprise or hybrid cloud. The simplicity and flexibility of hyperconverged infrastructure is also driving many companies to repatriate their workloads from the public cloud back on-premises.</p>
+            <p>Today, mission-critical applications have to deal with demanding workloads that fluctuate based on real-time interactions between users and machines. The magnitude of workloads, unimaginable in the past, are now getting into the forefront like Big Data, IoT, Machine Learning, and Artificial Intelligence. These workloads provide business advantages such as operational efficiencies and competitive edge by delivering actionable insights, but an infrastructure that has inherent scalability is required to handle these workloads. Hyperconvergence exactly fits this requirement. WAN latency, which was dreaded earlier with Tier 1 workloads, is no more a concern, thanks to hyperconvergence.</p>
 
 
 
@@ -267,16 +145,9 @@
 
       </div>
     </div>
-    <br>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+        <br>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
-
 </html>
