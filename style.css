@@ -365,7 +365,10 @@ justify-content: center;
     margin: 0px !important;
   }
 }
-
+/*Photos are being centered*/
+.container__image{
+  margin: 20px 0px 0px 0px !important;
+}
 
 
 
