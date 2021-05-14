@@ -16,9 +16,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .card-body {
-      height: 300px;
-    }
+  
     .text-center{
         font-size: 125%;
     }
