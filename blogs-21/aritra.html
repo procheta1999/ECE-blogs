@@ -134,141 +134,46 @@
       "
     >
       <div class="col-md-6 px-0">
-        <h1 class="display-2">Taking a look back at the infamous pentium 4</h1>
+        <h1 class="display-2">World of APIs</h1>
         <p class="lead my-3 blockquote fs-4"></p>
         <br />
         <p class="lead mb-0 blockquote-footer fw-bolder fs-5">
-          Debanka Ghosh
+          Aritra Sarkar
         </p>
       </div>
     </div>
     <!--Middle Section-->
     <main class="container">
       <p class="lead fs-6">
-        This blog is a personal project of mine.I
-        live and breathe in Computer
-        Architecture, semiconductor technology,
-        and all things related to it. The aim of this
-        blog is to discuss about a mixture of topics
-        related to modern day processors. My
-        writing style will be a bit technical in nature
-        some of the points will dive into specific
-        topics that'll be more sophisticated for
-        example:-Pipelining, superscalar OOOe,
-        But I'll make sure to keep it short and
-        simple for the broader audience and
-        average layman.
+        If you search the term ‘API’ in Google it will say that it stands for  Application Programming Interface. Now what is this API? Let’s dive into it. The software development world is advancing every day. Each  day a new programming language or a new technology pops up. There  are developers in each part of the world and they are using different  kinds of technologies to build an app or a software. Maybe even one  software is being made using a different programming language. Now it  is not possible for a developer to learn all the programming languages  that exist. So, if two developers are working on a software in two  different languages, connecting those two languages becomes  troublesome. Here API comes into picture. API helps both developers  to form a bridge between the two programming languages they are  using. 
         
       </p>
       <p class="lead fs-6">
-        In this particular blog I'm going to be
-        discussing about one of my favorite
-        microprocessor of all time the infamous
-        pentium 4, 2nd only to power pc 620 . Infamous for the various reasons we'll be discussing in this blog.
+        Suppose you are sending a message using Whatsapp. The message is  sent to a server which is inserting it to a database and sending back  a response to you that the message is delivered. This bridge between  your mobile app and the backend server is known as API. We can use  an analogy to explain this whole system better. Suppose you are a customer who ordered a dish at a restaurant. The waiter takes your  order and delivers it to the chef. The chef prepares the food and the  food is delivered to you by the waiter. So, here you don’t go to the  kitchen to collect your own food. The waiter acts as a bridge between  you and the kitchen. Hence, API helps the client side and server side  to be loosely coupled. 
       </p>
       <p class="lead fs-6">
-        The pentium 4 isn't a bleeding edge high
-        end microprocessor by any means
-        whatsoever, Infact this particular cpu is 2
-        decades old. Still I find the architecture
-        and goals of this design extremely
-        fascinating and how it changed the
-        perception of clock speeds
+        In modern day applications API or to be specific RESTful API is highly  used. A RESTful API is an API which follows the REST (Representational State Transfer) architectural style. This REST API was created by the 
+computer scientist Roy Fielding. In earlier days the client and server  side were to be written in the same programming language for easier  connection to the database. After the invention of REST API this changed.  Now the server side can be written in any language irrespective of the  client side. For example, a weather app consumes the weather data  created by weather stations via REST API and spews out that data in a  readable format to the end user. REST API made the job of developers a lot easier. 
+
 
       </p>
-      <p class="lead fs-6"><b>THE MYTH: Higher clock speed(mhz) =
-        always better.
-        </b></p>
+      
       <p class="lead fs-6">
-        The pentium 4 hits the market around
-November 2000 and it was the first major
-new x86 microarchitecture from intel since
-pentium pro's (p6) core. The p6 
-microarchitecture was dominant at that
-time and it came in its reincarnations the
-pentium Il, pentium lII. If anyone was
-paying attention during that , CLOCK SPEED
-SELLS. Intel definitely was paying attention
-and they kept mhz at the foremost of their
-minds.
-This was quite evident from intels
-promotional event, marketing to every
-last details of the processor architecture..
+        Now let’s dive deeper into REST. Every API cannot be a REST API. There  must be some constraints which when met can be REST API. When a  client makes a request via REST API, the server transfers the  representation of the state of the resource in a readable format such  as JSON, HTML etc via HTTP. JSON (Javascript Object Notation) is  universally used as an API. It transfers the data in key-value pairs which  helps the developers to understand and create the end-user application accordingly.
 
       </p>
-      <p class="lead fs-6"><b>PIPELINING</b></p>
+      <p class="lead fs-6"><i>An API to be a REST API has to meet these criteria:</i></p>
       <p class="lead fs-6">
-        Pipelining is extremely crucial in secreting
-every last drop of instruction level
-parallelism. Unfortunately due to the size
-of this blog its not feasible to discuss
-about Pipelining but in short it has to do
-with increasing the overall throughput of
-the particular machine.
-Alongside the increased throughput deep
-Pipelining is extremely helpful in making
-the processor reach stratospheric clock
-speeds. Although Pipelining comes with its
-own set of drawbacks and that is though
-increased latency and complexity.
-Because of these drawbacks, many critics
-of the pentium 4 microarchitecture,
-dubbed as "Netburst" by intel, have
-suggested that the staggering long 31
-stages of pipeline was In Fact a gimmick--
-a poor design choice made for the
-reasons of marketing and not
-performance. Intel knew that the general
-public associated higher clock speeds with
-higher performance, so they designed the
-cpu to run at enormous clock speeds that
-would prove detrimental to real world
-performance, power consumption and
-scalability.
-As it turns out pentium 4 critics were both
-right and wrong in spite of the predictions
-and assumptions that might sound absurd.
-The pentium 4's performance scaled fairly
-well with clock speeds, but they were right
-about the design philosophy and the origin
-of the pentium 4s deep pipelined design.
-In my understanding and it's pretty safe to
-say that's the actual case, even though
-intel will probably never publicly
-acknowledge that. The pentium 4s design
-team was instructed by the market ing
-team to design something that would
-reach stratospheric clock speeds which will
-Give intel a massive mhz lead over its
-rivals.
-When it comes to clock speeds higher is
-often better, but due to the industry wide
-problems of transitioning to the 90nm in
-general, proved to be problematic for the
-pentium 4 which relied on its higher clock
-speeds to achieve performance and
-maintain an edge over its rivals Another
-point to note here is that power
-Consumption doesn't linearly scale with
-clock speed. For example a 20% clock
-speed increase would require 50% extra
-power consumption thus the pentium 4
-required a lot of additional power than the
-competition to maintain its trivial lead.
-
-
-      </p>
+        • Requests should be made through HTTP. </p>
+        <p class="lead fs-6">• Every request should be Stateless i.e., no client information should be stored to get requests and each request must be  independent from each other. </p>
+        <p class="lead fs-6">• Cacheable data that streamlines client-server interactions. </p>
+        
       <p class="lead fs-6">
         <b>CONCLUSION</b>
       </p>
       <p class="lead fs-6">
-        Regardless of the drawbacks, pentium 4
-proved to be a successful product both in
-terms of performance and commercially,
-despite the public reception. The initial releases were problematic because of their inability to clock higher which stems from the inferior 130nm node. The further releases down the line were remarkable.This is due to
-the way pentiums advantage in certain
-types of applications specifically 3d and
-streaming media applications. Thus I feel like this particular architecture is fascinating in its own rights. 
+        REST API has made software development easier than ever. It is  widely used in Internet of Things (IoT) and Mobile App Development. In this pandemic situation too REST API has helped millions of users  by conveying them with data such as the number of infected and recovered  patients. Today anyone can build an app in a matter of a few days  without worrying about database and server-side languages. 
+
 
       </p>
       
