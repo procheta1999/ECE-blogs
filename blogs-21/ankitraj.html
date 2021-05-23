@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Eva | Read Blog</title>
+    <!--CSS Rules and Links Go Here-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="tech-eva-live-21/styles/styles_new.css" />
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/tech-eva-live-21/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/tech-eva-live-21/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/tech-eva-live-21/favicons/favicon-16x16.png"
+    />
+  </head>
+
+  <body class="d-flex flex-column h-100 bg-dark text-white">
+    <div class="wrapper">
+      <header class="container-lg" style="font-size: 40px">
+        <h1 class="text-center fw-bold display-1">
+          Tech<small class="text-muted">-Eva</small>
+        </h1>
+      </header>
+      <!--This bit is for the content of the navbar-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark rounded"
+        aria-label="Twelfth navbar example"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample10"
+            aria-controls="navbarsExample10"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-md-center"
+            id="navbarsExample10"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/tech-eva-live-21/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tech-eva-live-21/alt_about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tech-eva-live-21/alt_events.html"
+                  >Events</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle current active"
+                  href="#"
+                  id="dropdown10"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Blogs</a
+                >
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown10">
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="/tech-eva-live-21/blogs20.html"
+                      >Blog'O'Pedia V1.0 [2020]</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="/tech-eva-live-21/blogs21.html"
+                      >Blog'O'Pedia V2.0 [2021]</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Hero Section-->
+    <hr />
+    <br />
+    <div
+      class="
+        p-4 p-md-5
+        mb-4
+        text-white
+        rounded
+        bg-dark
+        container
+        blog-page-hero
+        img-fluid
+        rounded
+        border border-light
+        shadow-sm
+      "
+      style="
+        background-image: url(https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+      "
+    >
+      <div class="col-md-6 px-0">
+        <h1 class="display-2">INTRODUCTION TO ARDUINO UNO</h1>
+        <p class="lead my-3 blockquote fs-4"></p>
+        <br />
+        <p class="lead mb-0 blockquote-footer fw-bolder fs-5">Ankit Raj</p>
+      </div>
+    </div>
+    <!--Middle Section-->
+    <main class="container">
+      <p class="lead fs-6">
+        Have you ever broken your electronic toys or any electronic item, to
+        know how it works or what components are inside the device? Have you
+        ever thought of making your own gadgets like some remote control car,
+        line following robot, simple led system or any sensor based gadgets.
+        <br />
+        Today, I am going to introduce you to a microcontroller based board that
+        will make your ideas real. The name of the board is ‘Arduino UNO’. Some
+        of you might be thinking, what the microcontroller is? In the simplest
+        words, a microcontroller is a chip with CPU and some fixed amount of
+        RAM, ROM and other peripherals embedded in it. You might have been
+        thinking how this board gonna help us in making gadgets, So don’t worry
+        I will be clearing all doubts here, just stick with me.
+
+        <br />
+      </p>
+
+      <pre>
+What is Arduino?
+Arduino is an open source electronics platform which provides easy to use hardware and software which can be used for making various projects, gadgets and also for prototyping etc. Arduino makes different types of boards to serve different specific purposes and the boards can take different inputs and turn it into the output. We can do many stuffs using any of these boards but today we are going to learn about a particular board i.e. “Arduino UNO”. So let's jump into the details of the board and learn how we can use it to make our desired gadget.
+
+
+Arduino UNO
+Uno is basically a microcontroller board which uses ATmega328 as its main microcontroller chip. Below is the diagram of arduino with its parts labeled. Give a look at each part and read the description below for knowing much about it.
+
+
+Note :- i will be using processor word in place of microcontroller so don’t get confused. image showing parts of arduino uno
+
+
+Parts Explained of ARDUINO UNO
+ATmega328p :- It is the main microcontroller of the board which does all the computing for the board and stores the programs or the instructions. We also call it the brain of the board( just like
+
+the CPU is for computers ). It is a 8-bit microcontroller.
+
+ATmega16U2 :- It is the small microcontroller which is responsible for communication with the USB. It translates the data which comes via USB cable into something which is understandable by the main processor.
+Note :- The main processor communicates using serial communication. Serial communication is the process of communication where data is sent over a channel one bit at a time. So the board needs ATmega16U2 for communicating via USB.
+
+
+Power pins :- Power pins are for either supplying power to the board or drawing out power from the board to run some output devices like led, buzzers, shields etc. Following pins are power pins with their description :-
+Vin :- It is the pin for powering arduino. It takes voltage upto 7 to 12 volts(labeled) but the recommended voltage is 6 to 9 volt.
+5v :- It is the pin for supplying 5 volt to any electronic components connected to the board. It can draw upto 400mA of current over a USB power supply.
+3.3v :- It is the pin for supplying 3.3 volt to any electronic component connected to the board. GND :- It is the negative pin which act as negative end for completing the electrical circuit.
+Reset :- Reset pin is used to reset the arduino via an external button( if connected to that pin
+).
+
+IOREF :- This pin provides the voltage reference with which the microcontroller operates. It
+can be used by some shields to select the appropriate power source.
+
+USB Plug :- USB plug is just a simple B-type USB port which is used to connect the board via computer or laptop. It is necessary for programming the board. This pin also powers the board as USB cables draw power according to the need of device it connected to for example you can charge your phone with your laptop using USB cable.
+Power Plug :- It is used to supply power to arduino from an A.C source by using an ac to dc adapter. The recommended voltage is 7 to 12 volt but board can work on 6 to 20 volt supply. Note :- You must not supply more than 12 volt to the board it will overheat the voltage regulator and damage the board.
+Digital I/O pins :- There are total 14 digital input output pins on the board(6 of them which are PWM pins). As the name suggest these pins are for taking input and giving output in the form of digital signals i.e. 0 or 1. These pins are numbered from 2 to 13 on the board.
+Note :- Pin with ~ as the prefix are pwm pins we will be discussing pwm in the later part of this
+
+tutorial.
+
+ANALOG IN :- These pins are for taking analog inputs from the electronic input devices such as sensors etc. They are 6 in numbers and labeled as A0 to A5 on the board.
+Serial Out and Serial IN :- Both are responsible for the Communication of two arduino boards. ‘Serial out’ is labelled as “TX” and it transmits the signal to the different board. ‘Serial In’ is labelled as “RX” and it receives the signal from the board. Both of them are also used to connect board with some of the shields.
+Digital ground :- It is same as the ground and labelled as “GND”.
+
+In Circuit Serial Programmers(ICSP) :- There are two ICSP pins on the board the pin near the main processor is for programming the firmware and the bootloader of the processor similarly the port near the ATmega16U2 is used for programming the firmware of this microcontroller. This type of programming is known as AVR Programming or direct programming.
+Note :- firmware is the code which is prewritten in the Flash(ROM)Of the microcontroller. It is a low level code.
+Crystal Oscillator :- Crystal oscillator provides a clock Signal to the main processor. It provides a square wave signal which determines the time required for each T state. It has a clock speed of 16Mhz. Basically it is responsible for the speed of the board.
+Voltage Regulator :- It regulates the voltage supplied to the board. The arduino operates on 5 volt so its duty is to limit the excess voltage to the 5 volt. It gets Overheated if the supply voltage is greater than 12 volts.
+Voltage Comparator :- If the arduino is connected with multiple power sources at the same time then this Comparator decides which one to use.
+For example your board is connected with USB and you have also given a power supply of 6 volt via‘Vin’ pin then the comparator will divide the voltage through ‘Vin’ by 2 and then check whether it is >3.3v or <3.3v, if it is less than 3.3v then it will send this supply to the ground pin else it will send it to the voltage regulator and then Voltage regulator will cut the supply from the USB and hence board will be powered via the Vin source. So 6.6 is minimum voltage to cut the USB supply.
+Reset Button :- It resets the arduino and the programs written starts to execute from the line one. It doesn't delete the uploaded program.
+Specifications
+Now you know almost all the components present on the board. So lets move forward to learn about the working of the board but before that we will take a quick look at the few specifications of the board.
+
+
+Microcontroller : Microchip ATmega328P Operating Voltage : 5 Volts
+Input Voltage : 7 to 20 Volts
+
+Digital I/O Pins : 14 (of which 6 can provide PWM output) UART : 1
+I2C : 1 SPPI
+Analog Input Pins : 6
+
+DC Current per I/O Pin : 20 mA DC Current for 3.3V Pin : 50 mA
+Flash Memory : 32 KB of which 0.5 KB used by bootloader SRAM : 2 KB
+EEPROM : 1 KB
+
+Clock Speed : 16 MHz Length : 68.6 mm Width : 53.4 mm Weight : 25 g
+Above are the few specifications of the board. As you know that the main processor of the board is ATmega328P and the board operates on the 5 volts. The board is a digital board which means it sends output digitally i.e. in 0 and 1 (0=0volts and 1=5volts).
+
+
+Working of the board
+Board works according to your instructions. You can tell your board what to do by sending a set of instructions to the microcontroller on the board. To do so you use The Arduino programming language and the Arduino software(IDE).
+
+This board works on digital signals; it can't send/transmit analog signals. For those who don’t know what digital signal and analog signal is :- Digital signals are electrical signals which can only be in two states i.e. 0 or 1 / on or off / high or low. Analog signals are continuous electrical signals which range from 0 to 1024. But we can use digital signals as analog signals by
+PWM( pulse width modulation ). Pulse width modulation is a method of getting analog results by digital means. In this method we chop the digital signals effectively with respect to time and get the desired output. For example :- Suppose a motor runs at a full speed on 5v supply and we have a 5v supply which. But we want it to run at half of its speed. We will use PWM for this, motor does not start to run at the full speed as soon as we power it, it takes some time to get it full speed so what we will do we'll give it 5v supply until it get to rotate at half of its speed and then we will shift the supply to 0v and again we will give it 5v after a calculated time interval so that it maintain its speed at half of the max speed and this will result in continuous movement of motor at half of its speed. This is an important concept so keep this in mind we will know how to use it when we enter the programming part of the board.
+Learning about how to use hardwares to make gadgets sounds cool and it will also provide an edge in your career. It will make you self-sufficient and the coming era is “Era of Robots” and in that, it will be a great skill to achieve. So get yourself started as soon as possible and make interesting gadgets that will make our life easier.
+
+
+Thank you. Learning never ends so keep learning :)</pre
+      >
+
+      <pre class="text-muted fs-5 fw-bold">
+        Sources / References [If Any] : Internet
+      </pre>
+    </main>
+    <hr />
+    <!--Footer Section-->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5 bg-dark text-white">
+      <footer>
+        <div
+          class="container p-4"
+          style="background-color: rgba(46, 41, 41, 0.762)"
+        >
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                <b>Elektronica>></b>
+              </h5>
+              <p>
+                Elektronica is the tech wing of ECE, NSEC. This is the home for
+                all of your tech cravings and digital needs. Join other
+                like-minded people and share in the infinite rabbit-hole of
+                tech-whiz dom!
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                Find Us
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a
+                    href="https://www.facebook.com/nsececedpt/"
+                    style="color: #848282"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://www.instagram.com/nsec_ece_department/?igshid=atg6qghxzz0v"
+                    style="color: #848282"
+                    >Instagram</a
+                  >
+                </li>
+                <!--<li class="mb-1">
+            <a href="#!" style="color: #4f4f4f;">nthng</a>
+          </li>-->
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-1" style="letter-spacing: 2px; color: #818963">
+                Getting Started
+              </h5>
+              <table class="table" style="color: #848282; border-color: #666">
+                <tbody>
+                  <tr>
+                    <td>Date:</td>
+                    <td>12th - 22th</td>
+                  </tr>
+                  <tr>
+                    <td>Results:</td>
+                    <td>Coming Soon</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © Tech-Eva
+          <p class="text-white">
+            Designed And Maintained By WebTeam of ECE, NSEC Tech Wing, With <3
+          </p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!-- End of .container -->
+    <!--- End of Footer --->
+    <!-- BS5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
