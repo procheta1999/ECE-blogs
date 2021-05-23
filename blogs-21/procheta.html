@@ -122,76 +122,146 @@
       "
     >
       <div class="col-md-6 px-0">
-        <h1 class="display-4">Lazy and Suspense! </h1>
+        <h1 class="display-4">Lazy and Suspense!</h1>
         <p class="lead my-3 blockquote fs-4"></p>
         <br />
-        <p class="lead mb-0 blockquote-footer fw-bolder fs-5">Procheta bhattacharyya</p>
+        <p class="lead mb-0 blockquote-footer fw-bolder fs-5">
+          Procheta bhattacharyya
+        </p>
       </div>
     </div>
     <!--Middle Section-->
     <main class="container">
       <p class="lead fs-6">
-        You often see, in many web pages, there is a spinner or loading option or indicator that tells you that a page is getting loaded and you wait for it to get loaded properly.I am not talking of the loader that appears in the tabs area; but of the loader that comes in the middle of the page. If you can’t recall one, check this
-        <a href="https://frosty-mcnulty-66df76.netlify.app/" class="link-light"
-                  >
-                    website</a>
-    
-        that I have made recently (open it in your PC for viewing it properly). While the website was opening, did you notice a blue spinner going round and round, in the middle of the page ? Yes, that was the thing I was talking about. The spinner vanishes and it comes to the real page. 
+        You often see, in many web pages, there is a spinner or loading option
+        or indicator that tells you that a page is getting loaded and you wait
+        for it to get loaded properly.I am not talking of the loader that
+        appears in the tabs area; but of the loader that comes in the middle of
+        the page. If you can’t recall one, check this
+        <a href="https://frosty-mcnulty-66df76.netlify.app/" class="link-light">
+          website</a
+        >
 
+        that I have made recently (open it in your PC for viewing it properly).
+        While the website was opening, did you notice a blue spinner going round
+        and round, in the middle of the page ? Yes, that was the thing I was
+        talking about. The spinner vanishes and it comes to the real page.
       </p>
       <p class="lead fs-6">
-        So the question comes: how and why to implement it ? Looking from the perspective of a developer, you may not find anything wrong if you don’t implement it, but just that it improves user experience and improves page loading time. And after all, you made your website for users, right ? Often a time, your React app might get a huge data load coming from the backend, just when the component will be unmounting, and you have written the router configuration like this (considering this.state.data contains the data array and ShowData component is the target component of the mainpage):
+        So the question comes: how and why to implement it ? Looking from the
+        perspective of a developer, you may not find anything wrong if you don’t
+        implement it, but just that it improves user experience and improves
+        page loading time. And after all, you made your website for users, right
+        ? Often a time, your React app might get a huge data load coming from
+        the backend, just when the component will be unmounting, and you have
+        written the router configuration like this (considering this.state.data
+        contains the data array and ShowData component is the target component
+        of the mainpage):
       </p>
       <p class="lead fs-6">
-        &lt;Switch&gt;<br>
-        &lt;Route exact path=’/’ component={ShowData}/&gt;<br>
-        &lt;Route path=’/…..’ component={....}/> <br>
-        . <br>
-        . <br>
+        &lt;Switch&gt;<br />
+        &lt;Route exact path=’/’ component={ShowData}/&gt;<br />
+        &lt;Route path=’/…..’ component={....}/> <br />
+        . <br />
+        . <br />
         &lt;/Switch&gt;
-
       </p>
-      <p class="lead fs-6">Provided that you have imported all the components and necessary features. Your app will load, of course, if there is no error, but it will take time. No loading,indication will come. Just a blank screen will appear and your user might think that the page has crashed or there is some problem with the website.</p>
-      <p class="lead fs-6">So, according to me, to show the user the loading indication, you can approach the problem in two ways: <br><br>
-          
-        1) You can set up conditional rendering in your main component like (considering this.state.data contains the data array and ShowData component is the target component of the mainpage) :</p>
-      <p class="lead fs-6">{this.state.data.length===0 ? (&lt;iv&gt;Loading&lt;/div&gt;):( &lt;ShowData/&gt;)} </p>
-      <p class="lead fs-6">And then you can customise the icon or put styles, whatever you want.</p>
-      <p class="lead fs-6">2) You can write your router configuration in this </p>
-      <p class="lead fs-6">manner: const show= React.lazy(()=>import(‘......’)); 
-        </p>
-      <p class="lead fs-6">where in import, you will mention the file path where the ShowData component is. Then within the ‘return’ : </p>
       <p class="lead fs-6">
-        &lt;Switch&gt;<br>
-        &lt;Suspense fallback={&lt;div&gt;Loading &lt;/div&gt;}&gt;<br>
-        &lt;Route exact path=’/’ component={ShowData}/> <br>
-        &lt;/Suspense&gt;<br>
-        &lt;/Switch&gt;
+        Provided that you have imported all the components and necessary
+        features. Your app will load, of course, if there is no error, but it
+        will take time. No loading,indication will come. Just a blank screen
+        will appear and your user might think that the page has crashed or there
+        is some problem with the website.
+      </p>
+      <p class="lead fs-6">
+        So, according to me, to show the user the loading indication, you can
+        approach the problem in two ways: <br /><br />
 
+        1) You can set up conditional rendering in your main component like
+        (considering this.state.data contains the data array and ShowData
+        component is the target component of the mainpage) :
+      </p>
+      <p class="lead fs-6">
+        {this.state.data.length===0 ? (&lt;iv&gt;Loading&lt;/div&gt;):(
+        &lt;ShowData/&gt;)}
+      </p>
+      <p class="lead fs-6">
+        And then you can customise the icon or put styles, whatever you want.
+      </p>
+      <p class="lead fs-6">
+        2) You can write your router configuration in this
+      </p>
+      <p class="lead fs-6">
+        manner: const show= React.lazy(()=>import(‘......’));
+      </p>
+      <p class="lead fs-6">
+        where in import, you will mention the file path where the ShowData
+        component is. Then within the ‘return’ :
+      </p>
+      <p class="lead fs-6">
+        &lt;Switch&gt;<br />
+        &lt;Suspense fallback={&lt;div&gt;Loading &lt;/div&gt;}&gt;<br />
+        &lt;Route exact path=’/’ component={ShowData}/> <br />
+        &lt;/Suspense&gt;<br />
+        &lt;/Switch&gt;
       </p>
       <p class="lead fs-6">
         And you just have to add this line in the import section at the top:
       </p>
       <p class="lead fs-6">
-          import { Suspense } from 'react'; <br>
-          And subtract one line: <br>
-          the line where you had imported the ShowData component directly from its source file (other than the Lazy load) 
-            <br>
-            And you are good to go ! 
-
+        import { Suspense } from 'react'; <br />
+        And subtract one line: <br />
+        the line where you had imported the ShowData component directly from its
+        source file (other than the Lazy load)
+        <br />
+        And you are good to go !
       </p>
       <p class="lead fs-6"></p>
-      <p class="lead fs-6">I personally prefer the second technique, because if there is a scenario of having two many pages on my website, where a huge data load might be loaded, then I just have to specify my router configuration like this(not exactly like this, but similar to this), instead of making changes in the component files.</p>
-      <p class="lead fs-6">Lazy and Suspense, according to me, are two underrated heroes of the Dev world. </p>
-      <p class="lead fs-6">So in the content above, I have already given you some idea regarding why to use it and how to use it. Now let’s dig deeper. So, basically, what we are trying to achieve here, has got a significant term in the developer world: ‘code-splitting’ . Now what is code-splitting? As the name suggests, you are ‘splitting the code’, i.e. splitting your ‘bundle’ size. Now, what is a bundle? Bundle is nothing but the files associated with your React app; in terms, the code. So when your application becomes big with the load of data from backend and many files or code, etc, then it is recommended that you ‘split the code’ and render your
-            things dynamically, i.e. not all at once. You just render the things that are needed at that point of time. 
-            And this ‘code-splitting’ you can do in a React app with Lazy and Suspense. 
-    </p>
-      <p class="lead fs-6">As the name suggests, Lazy helps you render your component dynamically and yeah, it’s ‘lazy’ to render your other components then, which are not needed at that moment. So, after all, sometimes, being ‘lazy’ is good but that is true in the Dev world only ! </p>
-        <p class="lead fs-6">And as the name suggests indirectly, Suspense gives support to your page when Lazy has not loaded the page/ component yet. It creates a ‘suspense’: ‘suspense’ that a page is getting loaded. 
-</p>
-        <p class="lead fs-6">So many things being said, it’s now your time to explore Lazy and Suspense. So go and try in your code! But one thing more: I have shown only one lazy loading but you can lazy load as many components as you want, in a single React application and no need to write Suspense every time then ! Just put all your Lazy loading components within one Suspense.</p>
-      <hr>
+      <p class="lead fs-6">
+        I personally prefer the second technique, because if there is a scenario
+        of having two many pages on my website, where a huge data load might be
+        loaded, then I just have to specify my router configuration like
+        this(not exactly like this, but similar to this), instead of making
+        changes in the component files.
+      </p>
+      <p class="lead fs-6">
+        Lazy and Suspense, according to me, are two underrated heroes of the Dev
+        world.
+      </p>
+      <p class="lead fs-6">
+        So in the content above, I have already given you some idea regarding
+        why to use it and how to use it. Now let’s dig deeper. So, basically,
+        what we are trying to achieve here, has got a significant term in the
+        developer world: ‘code-splitting’ . Now what is code-splitting? As the
+        name suggests, you are ‘splitting the code’, i.e. splitting your
+        ‘bundle’ size. Now, what is a bundle? Bundle is nothing but the files
+        associated with your React app; in terms, the code. So when your
+        application becomes big with the load of data from backend and many
+        files or code, etc, then it is recommended that you ‘split the code’ and
+        render your things dynamically, i.e. not all at once. You just render
+        the things that are needed at that point of time. And this
+        ‘code-splitting’ you can do in a React app with Lazy and Suspense.
+      </p>
+      <p class="lead fs-6">
+        As the name suggests, Lazy helps you render your component dynamically
+        and yeah, it’s ‘lazy’ to render your other components then, which are
+        not needed at that moment. So, after all, sometimes, being ‘lazy’ is
+        good but that is true in the Dev world only !
+      </p>
+      <p class="lead fs-6">
+        And as the name suggests indirectly, Suspense gives support to your page
+        when Lazy has not loaded the page/ component yet. It creates a
+        ‘suspense’: ‘suspense’ that a page is getting loaded.
+      </p>
+      <p class="lead fs-6">
+        So many things being said, it’s now your time to explore Lazy and
+        Suspense. So go and try in your code! But one thing more: I have shown
+        only one lazy loading but you can lazy load as many components as you
+        want, in a single React application and no need to write Suspense every
+        time then ! Just put all your Lazy loading components within one
+        Suspense.
+      </p>
+      <hr />
       <p class="text-muted fs-5 fw-bold">
         Sources / References [If Any] : Internet
       </p>
