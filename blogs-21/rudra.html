@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>THE TIME TRAVEL | Krishna Kanta Pal</title>
+    <title>
+      Ray Tracing V/ Rasterisation - And You! | Rudraneel Bhattacharya
+    </title>
     <!--CSS Rules and Links Go Here-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -122,107 +124,134 @@
       "
     >
       <div class="col-md-6 px-0">
-        <h1 class="display-4">THE TIME TRAVEL</h1>
+        <h1 class="display-4">Ray Tracing V/ Rasterisation - And You!</h1>
         <p class="lead my-3 blockquote fs-4"></p>
         <br />
         <p class="lead mb-0 blockquote-footer fw-bolder fs-5">
-          Krishna Kanta Pal
+          Rudraneel Bhattacharya
         </p>
       </div>
     </div>
     <!--Middle Section-->
     <main class="container">
       <p class="lead fs-6">
-        From the Theory of Relativity concept, Sir Albert Einstein had cleared
-        it out that there is a good relationship between the space and time.
-        After the discovery of The Big Bang Theory, by Sir Stephen Hawking, the
-        concept of time travel started to take birth. Scientists believe that
-        the Earth is covered with a hypothetical layer of space and time. In the
-        presence of this layer the earth is revolving in its own axis around the
-        sun, taking a certain time limit. Now the question is that are we able
-        to do time travel. In fact, in our everyday life we travel in time!
-        According to Sir Albert Einstein, a person if moves at a faster speed
-        than that of light, that he could do a time travel.
-        <br />
-        <br />
+        So imagine this - you’re fresh in the tech market looking for the latest
+        and greatest card you can buy. The kind of stuff that will let you
+        <em>420 blaze it</em>, as the kids say, in all the latest, glorious AAA
+        titles.
       </p>
-
-      <p class="lead fs-4 fw-bold">What is Time Travel?</p>
-      <br />
-      <br />
       <p class="lead fs-6">
-        Actually, time travel is basically a voyage through different regions of
-        universe. But in space the time fluctuates a lot as compared to the same
-        on earth. Now for this time travel, do we need a time machine? No of
-        course not, it happens only in science fictional movies and fictional
-        stories and all. What we have to do is to calculate perfectly and set
-        on. According to Sir Stephen Hawking, to do a time travel the object
-        should have negative mass and negative energy density. This could be
-        satisfied by a Quantum Theory.
-        <br />
-        <br />
-        It is notified that the clock showing time on Earth is different from
-        the same in the airplane as well as from the satellite too. It is
-        because airplane moves at faster rate, comparative to our vehicles and
-        satellites move at speed of 7000 mph. Hence, they experience a time
-        dilation. Any object that would move relatively faster, it will
-        experience a time dilation, the time for that particular object would
-        run slowly as compared to the other objects.
-        <br />
-        <br />
-        Time travel needs a lot of energy to perform. Our world still not have
-        that much power to be successful in this operation. However, this energy
-        lack can be replaced by a good source of forces according to Einstein’s
-        Special Theory and General Theory of Relativity, stating about the law
-        of gravitation and various forces of nature. In Hawking’s words, by
-        using the Quantum Theory or Heisenberg’s Uncertainty Principal, if the
-        time-space curve could be warped up then at some instant it would
-        transform from a plane sheet to a U-Turn shaped structure. Then by
-        making a hole within it would produce a lot of energy similar to that in
-        a black hole, and this would let any object to flow from one region to
-        the other, at a very less amount of time. This hole is so called a “WORM
-        HOLE”.
-        <br />
-        <br />
+        Then you come across the inevitable world salad of GPU marketing
+        buzzwords - RT cores, Shaders, Rasterisation performance, VRAM, GDDR5,
+        GDDR6, Overclocking, etc. - you get the idea. For the uninitiated, this
+        is a massive put-off; and the marketers don’t exactly have the best
+        intentions as much as they have their inclinations set on making a quick
+        buck off of an unsuspecting customer like you. But fret not - for this
+        little blog here is just for people like you!
       </p>
-      <p class="lead fs-4 fw-bold">Consequences</p>
-
-      <br />
-      <br />
       <p class="lead fs-6">
-        1. Everyone is familiar about the dangerous “BERMUDA TRIANGLE” enclosing
-        the triangular area linking between Bermuda, Puerto Rico, and Florida.
-        It’s been labeled as a death triangle as it has been said to attract
-        every ship, airplane or whatever passing through the triangular area.
-        Mysteriously, they have disappeared from this world, some debris of
-        ships are even found out under that triangular area of the Atlantic
-        Ocean.
-        <br />
-        <br />
-        2. The disappearance of Flight 19, which includes the 5 Avenger Bombers
-        which got disappeared suddenly. I was observed that the Captain was in
-        constant touch with the base, while there was a sudden wreckage of the
-        link and mid-sentenced. After that the rescue force had been sent for
-        there traces, they too became disappeared and none of them had ever been
-        seen after that.
-        <br />
-        <br />
-        3. The disappearance of Boeing 777-200ER is the most astonishing and
-        debating news in the world, which is still not figured out. The Boeing
-        777-200ER flew from the Kuala Lumpur International Airport to The
-        Beijing Capital International Airport on 8th March, 2014. The airplane
-        lost the contact with base after 38 mins of their take off. After that,
-        it has never appeared for 7 years.
-        <br />
-        <br />
-
-        These are some examples that could be related to the time travel
-        concept. Some experts and scientists have assumed these consequences as
-        a result of Time Travel, while some have gone for conspiracy theory.
-        <br />
-        <br />
-        All of a sudden this has become an unsolved mystery of the humanity and
-        would take years after years to expose the truth.
+        Before we get started, let’s do a little housekeeping. Back in the day,
+        games were really not meant to be played like they are, they barely had
+        any graphics and usually game systems like the old nintendos or the
+        ataris were made using some rather old microprocessors with limited
+        graphics and sounds - for that generation, however, it was the greatest
+        thing ever.
+      </p>
+      <p class="lead fs-6">
+        Fast forward a few decades and now you have games that look and play
+        like the real world - er, maybe minus all the absolute chaos that you
+        can cause but that’s getting way too IRL for me IRL. Digressions aside,
+        games and entertainment have become exponentially more taxing which has
+        lead to the current market of GPUs with insane performances and inbuilt
+        memories which a decade or so back seemed outrageous to say the least.
+        Even the cheap, mass market consoles pack more punch these days than
+        supercomputers of the old days.
+      </p>
+      <p class="lead fs-6">
+        In particular, modern GPUs [Graphical Processing Units] are essentially
+        mini computers within your own computer which are responsible almost
+        entirely for the calculations and processing that lets you see stuff on
+        your monitor. It has its own cache, its own memory, and it’s own
+        dedicated output. In layman terms, for the most part, the faster and
+        more powerful a GPU, the quicker it can render out frames onto your
+        computer screen, and this is what you call FPS, or Frames Per Second.
+      </p>
+      <p class="lead fs-6">
+        Now with some of the basics cleared out, let us slide right into the
+        meat and potatoes of our little discussion as we start with good ‘ole
+        Rasterisation.
+      </p>
+      <p class="lead fs-4 fw-bold">What exactly is “Rasterisation”?</p>
+      <p class="lead fs-6">
+        Rasterisation, unlike what you may think, is a fairly new method for
+        rendering 3D scenes that essentially uses polygons to approximate real
+        3D shapes and lighting. This is quite apparent when you use things like
+        anti-aliasing or anisotropic filtering - what you’re essentially doing
+        is that you’re increasing the number of polygons or using software
+        techniques to make it appear as if you were increasing the number of
+        polygons. This results in a sharper and cleaner 3D render. In the case
+        of video games or even 3D movies, this is much cheaper to accomplish and
+        easier to implement with existing game engines and 3D visual tools such
+        as Unreal engine or Blender.
+      </p>
+      <p class="lead fs-6">
+        Modern GPUs, even cheaper, budget oriented ones are really good at this
+        particular method of rendering 3D frames. Chances are, if you’re playing
+        just about any game and using any GPU that isn’t an Nvidia RTX (with RT
+        enabled) or AMD’s Navi lineup (Radeon 6000 Series / Superresolution),
+        you’re using some form of Rasterisation for all of what your monitor is
+        displaying.
+      </p>
+      <p class="lead fs-4 fw-bold">
+        So with that done, what about Ray Tracing? What’s the big deal and why
+        is it taking the market by such a storm?
+      </p>
+      <p class="lead fs-6">
+        Well, technically speaking, the actual computational technique for RT is
+        quite simple really; Imagine how human beings “see” things - millions,
+        if not billions of individual rays of light(photon streams) bounce off
+        of real world objects and then our brain fills in the gaps by figuring
+        out the details of the raw information it receives and viola! You get to
+        see the world in all of it’s splendor.
+      </p>
+      <p class="lead fs-6">
+        Ray Tracing or RT, employs a very similar technique. We place light
+        sources to make light rays bounce around objects, then we compute the
+        exact way the object should look, how it’s shadows should be, just how
+        much it shines - essentially a very similar process to how we see on a
+        biological level, except it involves an obscene amount of computational
+        power, some incredible algorithms and a lot of software magic and
+        emulation to achieve the end result - which is, quite frankly, an
+        incredible sight to behold. Seriously, if you’re any bit interested in
+        this particular field you may have already perused through the absolute
+        fountain of internet memes involving RTX ON / OFF, but let me assure
+        you, corporate speak aside, the actual end results are stunning and are
+        immediately obvious. RT is most definitely THE FUTURE of 3D rendering,
+        it’s just a question of mass adoption and a function of time - in the
+        meantime, you can already enjoy some gloriously ray traced animated
+        movies that took something like 1000 days or so for each 3D frame to be
+        rendered - which kind of brings it all back to why rendering games at a
+        playable 60+ FPS with RT on requires such massive amounts of
+        computational power and the obscene cost in the present market.
+      </p>
+      <p class="lead fs-4 fw-bold">
+        So where does all of this lead you, the consumer?
+      </p>
+      <p class="lead fs-6">
+        Well, if you really just want some decent card that can play games,
+        don’t buy a card just for the RT aspects - you will be disappointed and
+        will be left with a kidney (or possibly both) sold off.
+      </p>
+      <p class="lead fs-6">
+        In the long run, though, RT is definitely a huge game changer and
+        something we should all be looking forward to, especially with the
+        latest generation of consoles looking to have native support built in,
+        which will, for sure, facilitate a lot of market adoption among
+        developers and consumers alike.
+      </p>
+      <p class="lead fs-6">
+        Thus as we come to a close here, I hope that we all can leave a bit more
+        geeked out than when we arrived here!
       </p>
       <hr />
       <p class="text-muted fs-5 fw-bold">
