@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Computer Networking | Rounak Saha</title>
+        <!--CSS Rules and Links Go Here-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="/styles/styles_new.css" />
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    </head>
+
+    <body class="d-flex flex-column h-100 bg-dark text-white">
+        <div class="wrapper">
+            <header class="container-lg" style="font-size: 40px">
+                <h1 class="text-center fw-bold display-1"> Tech<small class="text-muted">-Eva</small>
+                </h1>
+            </header>
+            <!--This bit is for the content of the navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded" aria-label="Twelfth navbar example">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/alt_about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/alt_events.html">Events</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle current active" href="#" id="dropdown10"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Blogs</a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown10">
+                                    <li>
+                                        <a class="dropdown-item text-light" href="/blogs20.html">Blog'O'Pedia V1.0
+                                            [2020]</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light" href="/blogs21.html">Blog'O'Pedia V2.0
+                                            [2021]</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Hero Section-->
+        <hr />
+        <br />
+        <div class="
+        p-4 p-md-5
+        mb-4
+        text-white
+        rounded
+        bg-dark
+        container
+        blog-page-hero
+        img-fluid
+        rounded
+        border border-light
+        shadow-sm
+      " style="
+        background-image: url(https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+      ">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4">Computer Networking</h1>
+                <p class="lead my-3 blockquote fs-4"></p>
+                <br />
+                <p class="lead mb-0 blockquote-footer fw-bolder fs-5"> Rounak Saha </p>
+            </div>
+        </div>
+        <!--Middle Section-->
+        <main class="container">
+            <p class="lead fs-6"> In simple words, if someone needs to define what computer networking is we can say it
+                is the name given to the full scope of how computers communicate with each other. So, a question might
+                arise that how the computers communicate with each other? Are there some specific rules which it needs
+                to follow? Your guess is correct. A definite set of rules that computer must follow in order to
+                communicate properly is called protocol. <br> There are basically two models of Computer Networking -
+                <br>
+                <ul>
+                    <li>TCP/IP Five Layer Network Model</li>
+                    <li>OSI(Open System Interconnection) Seven Layer Model</li>
+                </ul>
+            </p>
+            <p class="lead fs-4 fw-bold">TCP/IP Five-Layer Network Model</p>
+            <p class="lead fs-6">
+                <ol>
+                    <li><u>Physical Layer</u> - It represents physical devices that interconnect computers. It follows
+                        the protocol 10BaseT,802.11.</li>
+                    <li><u>Data Link Layer</u> -It is responsible for communication of network devices by interpreting
+                        signals. This layer follows the protocol Ethernet/Wi-Fi with protocol data unit as Frames and
+                        MAC Address addressing. </li>
+                    <li><u>Network Layer</u> - It allows different networks to communicate with each other through
+                        devices known as routers. This layer follows the protocol IP with protocol data unit as
+                        Datagram. </li>
+                    <li><u>Transport Layerr</u> - It sorts out client and server programs are supposed to get that data.
+                        It follows TCP/UDP protocol with protocol data unit as segment following Port #’s addressing.
+                    </li>
+                    <li><u> Application Layer</u> - It follows HTTP,SMTP protocol and messages as protocol data unit.
+                    </li>
+                </ol> OSI Seven Layer Model is now not used as much as it is outdated but it must be noted that here
+                only application later is divided into three more sub layers.
+            </p>
+            <p class="lead fs-4 fw-bold"> Basic Networking Devices </p>
+            <p class="lead fs-6">
+                <ul>
+                    <li><u>Cables</u> - It connects different devices to each other, allowing data to be transmitted
+                        over them.</li>
+                    <li><u>Hub</u> - It is a physical layer device that allows communications from multiple computers at
+                        once.</li>
+                    <li><u>Router</u> - It is a device which helps us to forward data between independent networks.</li>
+                </ul>
+            </p>
+            <p class="lead fs-4 fw-bold">Duplex & Simplex Communication </p>
+            <p class="lead fs-6"> Duplex Communication is the concept that information can flow in both directions
+                across the cable whereas in simplex communication the process is unidirectional. Client computer which
+                only sends data to the server is Simplex Communication. Client Computer which sends and receives data
+                simultaneously is Full Duplex whereas client computer which takes turn to send or receive data is Half
+                Duplex. </p>
+            <p class="lead fs-4 fw-bold">Some Important Terms & Concepts of Networking</p>
+            <p class="lead fs-6">
+                <ul>
+                    <li><u>Ethernet</u> - It is primarily a standard communication protocol used to create local area
+                        networks. </li>
+                    <li><u>MAC Address</u> - Also known as Media Access Control Address, is a globally unique identifier
+                        attached to an individual network interface.</li>
+                    <li><u>Transmission Control Protocol (TCP)</u> - It is a protocol that establishes a connection
+                        between client and server so that data can be sent.</li>
+                    <li><u>TCP Control Flags</u>
+                        <ul>
+                            <li>URG (Urgent)-It indicates the segment is considered urgent and pointer field has more
+                                data about this.</li>
+                            <li>ACK (Acknowledged)-It means that the acknowledgement number field should be examined.
+                            </li>
+                            <li>PSH (Push)-The transmitting device wants to push data to the receiving application
+                                immediately. </li>
+                            <li>RST (Reset)-It is used to indicate that the sender will not accept any data. </li>
+                            <li>SYN (Synchronize)-It is used when first establishing a TCP connection and makes sure the
+                                receiving end knows to examine the sequence number field. </li>
+                            <li>FIN (Finish)-When it is set to one, it means transmitting computer doesn’t have any data
+                                to send and communication can be closed. </li>
+                        </ul>
+                    </li>
+                    <li><u>Three Way Handshake</u> - Handshake is a way for two devices to ensure that they are speaking
+                        the same protocol and will be able to understand each other. If there are two computers Computer
+                        A and Computer B, Computer A sends SYN (Synchronize) flag to Computer B which it receives and
+                        sends SYN/ACK flag to Computer A and then again Computer A sends ACK (Acknowledged) flag to
+                        Computer B completing the three way handshake.</li>
+                    <li><u>Firewall</u> - A device which blocks traffic by meeting certain criteria.</li>
+                    <li><u>Domain Name System (DNS)</u> - A global and highly distributed network service that resolves
+                        strings of letters into IP addresses for us. </li>
+                    <li><u>Virtual Private Network (VPN)</u> - A technology that allows for the extension of a private
+                        network to hosts that are not present on the local network.</li>
+                    <li><u>Wired Equivalent Privacy (WEP) </u> - It is an encryption technology which only uses 40bits
+                        for its encryption keys. WEP was quickly replaced by WPA or Wi-Fi Protected Access. WPA uses
+                        128-bit key. Today the most commonly used encryption algorithm for wireless network is WPA2,
+                        which uses a 256-bit key. </li>
+                </ul>
+            </p>
+            <p class="lead fs-6"> So, this is a small overview of Computer Networking. Always remember it doesn’t matter
+                in which domain you are in you can always search on the Internet and learn new things. Stay humble and
+                try out new things and I am sure you will find a topic which you will be interested to learn. In such a
+                way as I found out Computer Networking quite interesting to me. So, that’s all for this blog. See you on
+                the next one!! </p>
+            <hr />
+            <p class="text-muted fs-5 fw-bold"> Sources / References [If Any] : Internet </p>
+        </main>
+        <hr />
+        <!--Footer Section-->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container my-5 bg-dark text-white">
+            <footer>
+                <div class="container p-4" style="background-color: rgba(46, 41, 41, 0.762)">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                                <b>Elektronica>></b>
+                            </h5>
+                            <p> Elektronica is the tech wing of ECE, NSEC. This is the home for all of your tech
+                                cravings and digital needs. Join other like-minded people and share in the infinite
+                                rabbit-hole of tech-whiz dom! </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <h5 class="mb-3" style="letter-spacing: 2px; color: #818963"> Find Us </h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1">
+                                    <a href="https://www.facebook.com/nsececedpt/" style="color: #848282">Facebook</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="https://www.instagram.com/nsec_ece_department/?igshid=atg6qghxzz0v"
+                                        style="color: #848282">Instagram</a>
+                                </li>
+                                <!--<li class="mb-1">
+            <a href="#!" style="color: #4f4f4f;">nthng</a>
+          </li>-->
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <h5 class="mb-1" style="letter-spacing: 2px; color: #818963"> Getting Started </h5>
+                            <table class="table" style="color: #848282; border-color: #666">
+                                <tbody>
+                                    <tr>
+                                        <td>Date:</td>
+                                        <td>12th - 22th</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Results:</td>
+                                        <td>Coming Soon</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"> © Tech-Eva <p
+                        class="text-white"> Designed And Maintained By WebTeam of ECE, NSEC Tech Wing, With <3 </p>
+                            </div> <!-- Copyright -->
+            </footer>
+        </div>
+        <!-- End of .container -->
+        <!--- End of Footer --->
+        <!-- BS5 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+        </script>
+    </body>
+
+</html>
