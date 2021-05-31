@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OTP  | Sukriti Guin</title>
+    <title>DLSS - A Big Leap In Rendering Technology | MD Ashraf Ali</title>
     <!--CSS Rules and Links Go Here-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -122,120 +122,65 @@
       "
     >
       <div class="col-md-6 px-0">
-        <h1 class="display-4"> OTP </h1>
+        <h1 class="display-4">DLSS - A Big Leap In Rendering Technology</h1>
         <p class="lead my-3 blockquote fs-4"></p>
         <br />
-        <p class="lead mb-0 blockquote-footer fw-bolder fs-5">
-          Sukriti Guin
-        </p>
+        <p class="lead mb-0 blockquote-footer fw-bolder fs-5">MD Ashraf Ali</p>
       </div>
     </div>
     <!--Middle Section-->
     <main class="container">
       <p class="lead fs-6">
-         OTP stands for one-time password, also called a one-time-pin or
-dynamic password. The invention of the one-time pad is generally
-credited to Gilbert S. Vernam and Joseph O. Mauborgne. This is an
-automatically generated numeric or alphanumeric password that
-authenticates the person for a single transaction or logon session.
-
-    </p>
-    
-      <p class="lead fs-6">OTP is greater steady than static passwords, in particular person-
-generated passwords that can be vulnerable and / or reused
-throughout a couple of accounts. OTP can update authentication
-credentials or be used as a further to feature some other layer of
-protection.
-        </p>
-        <p class="lead fs-4 fw-bold">What is a static password?</p>
-
-      <p class="lead fs-6">
-         Static password are reusable password . They are commonly user-
-generated and work best when combined with another authentication
-type, like - smart card bio-metric control. A passphrase is an extended
-static password including phrases in a word or sentence.
-
+        DLSS is known as deep learning super sampling which is used to increase
+        resolution of game or movie without increasing load on gpu linearly. It
+        is developed by Nvidia. The “super sampling” part refers to an
+        anti-aliasing method that smooths the jagged edges that show up on
+        rendered graphics. Over other forms of anti-aliasing, though, super
+        sampling anti-aliasing which works by rendering the image at a much
+        higher resolution and then using that data to fill in the gaps at the
+        native resolution.
+        <br /><br />
+        DLSS is the result of Nvidia’s A.I. algorithm to generate better-looking
+        image in games. After rendering the game at a lower resolution, DLSS
+        work out the information from its knowledge base of image training, to
+        generate an image at a higher resolution. DLSS 2.0 offers 4x resolution
+        which allows you which can upscale games from 1080p to 4k resolution. It
+        works like accumulation temporal anti-aliasing, where many frames from
+        are queued up and information from these frames is then used to create
+        more smooth lines and add detail into an image - but instead of adding
+        detail to an image of the same resolution as TAA does, DLSS generates a
+        much higher output resolution instead. Which helps in reducing problem
+        such as ghosting. As many of these frames are from the past, motion
+        vectors from those frames for every object and pixel on screen are
+        integral for DLSS working properly. All of this information is then used
+        to create the upscaled image with the help of AI program running on the
+        GPU, which is accelerated by the tensor cores. Tensor core is mainly
+        used to do matrix multiplication at much higher rate which is integral
+        to neural network. So, while DLSS has fewer base pixels to work from, it
+        has accessed a vast amount of compute power to help the reconstruction
+        process’s forces a game to render at a lower resolution and then uses
+        its trained A.I. algorithm to work out what it would look like if it
+        were rendered at a higher one. It does this by utilizing some
+        anti-aliasing effects and some sharpening method. Visual relics that
+        would not be present at higher resolutions are removed and even used to
+        work out the details that should be present in an image.
+        <br /><br />
+        DLSS is great in theory, but early version(DLSS 1.0) has lot of
+        limitation in practice. DLSS 1.0 could only be trained on a per game
+        basis—which means Nvidia needed to devote its entire supercomputer’s
+        power to each game that uses the technology. Meanwhile, for DLSS 2.0
+        Nvidia claims that it uses a fundamentally different AI model that is
+        twice as fast. It accumulates data from multiple frames to generate its
+        high-quality output frame, then feeds that frame back into the model to
+        help inform the next frame. This increases the amount of data going into
+        the AI model, which helps Nvidia generate higher-quality images. They
+        can use a universal network for DLSS 2.0, instead of requiring per game
+        training. And because the new AI model uses tensor core much more
+        efficiently, DLSS 2.0 is almost twice as fast as DLSS 1.0.
+        <br /><br />
+        Throughout the future, DLSS will continue to improve because it operates
+        though neutral network.
       </p>
-
-      <p class="lead fs-6">
-        <b>Types of OTP:</b>There are two types of OTPs: <u>HOTP</u> and <u>TOTP</u>
-      </p>
-        <p class="lead fs-4 fw-bold">What is HOTP?
-        </p>
-        <p class="lead fs-6">
-             The &quot;H&quot; in HOTP stands for Hash-Based Message Authentication Code
-            (HMAC). HOTP is a freely available.
-
-        <br>
-        The HOTP algorithm provides a method of authentication by symmetric
-        generation of human-readable passwords, or values, each used for only
-        one authentication attempt. The one-time property leads directly from
-        the single use of each counter value.
-        </p>
-
-        <p class="lead fs-4 fw-bold">What is TOTP?</p>
-        <p class="lead fs-6">TOTP stands for Time-based One Time Password. The moving factor in
-        TOTP is time-based not counter based. In TOTP passwords valid for
-        30-60 seconds, that is called time-step. Time-step means the amount
-        of time till the password is valid. If time limit exceed then you have to
-        send the request to send the new TOTP.
-        <br>
-        TOTP Algorithm developed by IETF (Internet Engineering Task Force).
-        </p>
-        <p class="lead fs-4 fw-bold">Which is better - HOTP or TOTP ?</p>
-        <p class="lead fs-6">TOTP is more popular than HOTP. Because the generate passcode is
-        temporary and valid for 30-60 seconds , that provides higher security
-        level. So, TOTP is better than HOTP.</p>
-        <p class="lead fs-4 fw-bold">Methods to delivery OTP :</p>
-        <p class="lead fs-6">
-            <ul>
-                <li><b>SMS Based: </b>This method is easy. In this method OTP is generated in
-                server side and delivered through SMS. It is most common process
-                used across the world.</li>
-                <li><b>Application Based: </b>In this method OTP is generated in user side
-                using specific smartphone application that scan a QR code in the
-                screen. This reduced the security risk.</li>
-
-            </ul>
-        </p>
-        <p class="lead fs-4 fw-bold">Advantages of OTP:</p>
-        <p class="lead fs-6">
-
-            1) No danger of password being stolen getting used for a couple of web
-sites or services.<br><br>
-2) Great protection for customers.<br><br>
-3) Not easy to crack the Password.
-
-        </p>
-        <p class="lead fs-4 fw-bold">Disadvantages of OTP: </p>
-        <p class="lead fs-6">
-
-            1) Additional technology is required.
-
-2) The protection image can fail or be damaged.
-3) Process of OTP may be a cumbrous.
-
-        </p>
-          <p class="lead fs-6"><b>Note: </b>In OTP-based confirmation strategies, the client&#39;s OTP
-application and the verification worker depend on shared mysteries.
-Qualities for one-time passwords are created utilizing the Hashed
-Message Authentication Code (HMAC) calculation and a moving
-variable, for example, time sensitive data (TOTP) or an occasion
-counter (HOTP). The OTP esteems have moment or second timestamps
-for more noteworthy security. The one-time secret word can be
-conveyed to a client through a few channels, including a SMS-based
-instant message, an email or a committed application on the endpoint.</p>
-        <p class="lead fs-6">Security experts have for some time been worried that SMS message
-satirizing and man-in-the-center (MITM) assaults can be utilized to
-break 2FA frameworks that depend on one-time passwords. In any
-case, the U.S. Public Institute of Standards and Technology (NIST)
-declared designs to censure the utilization of SMS for 2FA and one-
-time passwords, as the strategy is defenseless against a collection of
-assaults that could bargain those passwords and codes. Thus, ventures
-considering organization of one-time passwords ought to investigate
-other conveyance techniques other than SMS.</p>
-
-   
       <hr />
       <p class="text-muted fs-5 fw-bold">
         Sources / References [If Any] : Internet
