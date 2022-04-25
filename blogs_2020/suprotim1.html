@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Eva | Blogs - Template</title>
+    <!--CSS Rules and Links Go Here-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/styles_new.css" />
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+  </head>
+
+  <body class="d-flex flex-column h-100 bg-dark text-white">
+    <div class="wrapper">
+      <header class="container-lg" style="font-size: 40px">
+        <h1 class="text-center fw-bold display-1">
+          Tech<small class="text-muted">-Eva</small>
+        </h1>
+      </header>
+      <!--This bit is for the content of the navbar-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark rounded"
+        aria-label="Twelfth navbar example"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample10"
+            aria-controls="navbarsExample10"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-md-center"
+            id="navbarsExample10"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/alt_about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/alt_events.html">Events</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle current active"
+                  href="#"
+                  id="dropdown10"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Blogs</a
+                >
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown10">
+                  <li>
+                    <a class="dropdown-item text-light" href="/blogs20.html"
+                      >Blog'O'Pedia V1.0 [2020]</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="/blogs21.html"
+                      >Blog'O'Pedia V2.0 [2021]</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Hero Section-->
+    <hr />
+    <br />
+    <div
+      class="
+        p-4 p-md-5
+        mb-4
+        text-white
+        rounded
+        bg-dark
+        container
+        blog-page-hero
+        img-fluid
+        rounded
+        border border-light
+        shadow-sm
+      "
+      style="
+        background-image: url(https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+      "
+    >
+      <div class="col-md-6 px-0">
+        <h1 class="display-2">A Brief Introduction to VPN in Cybersecurity</h1>
+
+        <br />
+        <p class="lead mb-0 blockquote-footer fw-bolder fs-5">Suprotim Dutta</p>
+      </div>
+    </div>
+    <!--Middle Section-->
+    <main class="container">
+      <p class="lead fs-6">
+        So, what's this all about - VIRTUAL PRIVATE NETWORKS (VPN’s) are a
+        common way to connect remotely to a network in a secure fashion. A VPN
+        creates a private network connection over the Internet to connect remote
+        sites or users to the private network. Security is accomplished by
+        encrypting all the transmissions.
+      </p>
+
+      <p class="lead fs-6">
+        A VPN allows a remote user to have network access, just as if it was
+        local to the network as if the user were local, but it also makes the
+        connection secure. Since most organizations have many employees
+        traveling and working from home, remote network access has become an
+        important security concern. Users want access & administrators want
+        security - VPN provides both. To accomplish this purpose, the VPN must
+        emulate a direct network connection. This means it must provide both the
+        same level of access & security as a direct connection. To emulate a
+        dedicated point to point link, data is encapsulated or wrapped, with a
+        header that provides routing information allowing it to transmit across
+        the internet to reach its destination. This creates a virtual network
+        connection between two points. The data being sent is also encrypted,
+        making the virtual network - private.
+      </p>
+      <p class="lead fs-6">
+        A VPN do not require a separate technology or direct cabling. It is a
+        virtual private network, which means it can use existing connections to
+        provide a secure connection. In most cases it is used through normal
+        internet connections.
+      </p>
+      <p class="lead fs-6">
+        A variety of methods are available for connecting one computer to
+        another. Once upon a time, it was common to dial up to an ISP via a
+        phone modem. Nowadays, cable modems, cellular devices, and other
+        mechanisms are common: - not inherently secure. Any data that is sent
+        back & forth is unencrypted - anyone can use a packet sniffer to
+        intercept & view the data, and neither end is authenticated. This means
+        we cannot be completely certain - who we are really sending data to or
+        receiving from - VPN provides answers to all these issues.
+      </p>
+      <p class="lead fs-6">
+        The arrangement is generally acceptable for an ISP. The customers
+        connecting simply want a channel to the Internet and do not need to
+        connect directly or securely to a specific network. However, the setup
+        is inadequate for remote users that attempt to connect to an
+        organization's network.
+      </p>
+
+      <p class="lead fs-6">
+        In such cases - the private & secure connection that a VPN provides is
+        critical.
+      </p>
+
+      <p class="lead fs-6">
+        Individual remote users are not only the users of VPN technology. Many
+        larger organizations have offices in various locations. Achieving
+        reliable and secure site to site connectivity for such organizations is
+        an important issue. The various branch offices must be connected to the
+        central corporate network through tunnels that transport traffic over
+        the Internet.
+      </p>
+      <p class="lead fs-6">
+        Using VPN technology for the site to site connectivity enables a branch
+        office with multiple links to move away from an expensive, dedicated
+        data lines to simply utilize existing Internet connections.
+      </p>
+      <p class="lead fs-6">
+        There are various ways to achieve the encryption needs of a VPN. Certain
+        network protocols are frequently used for VPN 's.
+      </p>
+
+      <p class="lead fs-6">
+        The two most commonly used protocols for this purpose are -
+      </p>
+      <p class="lead fs-6">
+        <b>1.POINT TO POINT TUNNELLING PROTOCOL (PPTP)</b>
+      </p>
+      <p class="lead fs-6"><b>2. LAYER 2 TUNNELLING PROTOCOL (L2TP) </b></p>
+      <p class="lead fs-6">
+        But will talk about them in detail perhaps in another blog.
+      </p>
+      <p class="lead fs-6">
+        Till then stay home, stay safe and always remember -
+        <i>"One single Vulnerability is all an attacker needs "</i>
+      </p>
+    </main>
+    <hr />
+    <!--Footer Section-->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5 bg-dark text-white">
+      <footer>
+        <div
+          class="container p-4"
+          style="background-color: rgba(46, 41, 41, 0.762)"
+        >
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                <b>Elektronica>></b>
+              </h5>
+              <p>
+                Elektronica is the tech wing of ECE, NSEC. This is the home for
+                all of your tech cravings and digital needs. Join other
+                like-minded people and share in the infinite rabbit-hole of
+                tech-whiz dom!
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                Find Us
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a
+                    href="https://www.facebook.com/nsececedpt/"
+                    style="color: #848282"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://www.instagram.com/nsec_ece_department/?igshid=atg6qghxzz0v"
+                    style="color: #848282"
+                    >Instagram</a
+                  >
+                </li>
+                <!--<li class="mb-1">
+            <a href="#!" style="color: #4f4f4f;">nthng</a>
+          </li>-->
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-1" style="letter-spacing: 2px; color: #818963">
+                Getting Started
+              </h5>
+              <table class="table" style="color: #848282; border-color: #666">
+                <tbody>
+                  <tr>
+                    <td>Date:</td>
+                    <td>12th - 22th</td>
+                  </tr>
+                  <tr>
+                    <td>Results:</td>
+                    <td>Coming Soon</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © Tech-Eva
+          <p class="text-white">
+            Designed And Maintained By WebTeam of ECE, NSEC Tech Wing, With <3
+          </p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!-- End of .container -->
+    <!--- End of Footer --->
+
+    <!-- BS5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

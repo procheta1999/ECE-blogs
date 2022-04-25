@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Ray Tracing V/ Rasterisation - And You! | Rudraneel Bhattacharya
+    </title>
+    <!--CSS Rules and Links Go Here-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/styles_new.css" />
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+  </head>
+
+  <body class="d-flex flex-column h-100 bg-dark text-white">
+    <div class="wrapper">
+      <header class="container-lg" style="font-size: 40px">
+        <h1 class="text-center fw-bold display-1">
+          Tech<small class="text-muted">-Eva</small>
+        </h1>
+      </header>
+      <!--This bit is for the content of the navbar-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark rounded"
+        aria-label="Twelfth navbar example"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample10"
+            aria-controls="navbarsExample10"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-md-center"
+            id="navbarsExample10"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/alt_about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/alt_events.html">Events</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle current active"
+                  href="#"
+                  id="dropdown10"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Blogs</a
+                >
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown10">
+                  <li>
+                    <a class="dropdown-item text-light" href="/blogs20.html"
+                      >Blog'O'Pedia V1.0 [2020]</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="/blogs21.html"
+                      >Blog'O'Pedia V2.0 [2021]</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Hero Section-->
+    <hr />
+    <br />
+    <div
+      class="
+        p-4 p-md-5
+        mb-4
+        text-white
+        rounded
+        bg-dark
+        container
+        blog-page-hero
+        img-fluid
+        rounded
+        border border-light
+        shadow-sm
+      "
+      style="
+        background-image: url(https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+      "
+    >
+      <div class="col-md-6 px-0">
+        <h1 class="display-4">Ray Tracing V/ Rasterisation - And You!</h1>
+        <p class="lead my-3 blockquote fs-4"></p>
+        <br />
+        <p class="lead mb-0 blockquote-footer fw-bolder fs-5">
+          Rudraneel Bhattacharya
+        </p>
+      </div>
+    </div>
+    <!--Middle Section-->
+    <main class="container">
+      <p class="lead fs-6">
+        So imagine this - you’re fresh in the tech market looking for the latest
+        and greatest card you can buy. The kind of stuff that will let you
+        <em>420 blaze it</em>, as the kids say, in all the latest, glorious AAA
+        titles.
+      </p>
+      <p class="lead fs-6">
+        Then you come across the inevitable world salad of GPU marketing
+        buzzwords - RT cores, Shaders, Rasterisation performance, VRAM, GDDR5,
+        GDDR6, Overclocking, etc. - you get the idea. For the uninitiated, this
+        is a massive put-off; and the marketers don’t exactly have the best
+        intentions as much as they have their inclinations set on making a quick
+        buck off of an unsuspecting customer like you. But fret not - for this
+        little blog here is just for people like you!
+      </p>
+      <p class="lead fs-6">
+        Before we get started, let’s do a little housekeeping. Back in the day,
+        games were really not meant to be played like they are, they barely had
+        any graphics and usually game systems like the old nintendos or the
+        ataris were made using some rather old microprocessors with limited
+        graphics and sounds - for that generation, however, it was the greatest
+        thing ever.
+      </p>
+      <p class="lead fs-6">
+        Fast forward a few decades and now you have games that look and play
+        like the real world - er, maybe minus all the absolute chaos that you
+        can cause but that’s getting way too IRL for me IRL. Digressions aside,
+        games and entertainment have become exponentially more taxing which has
+        lead to the current market of GPUs with insane performances and inbuilt
+        memories which a decade or so back seemed outrageous to say the least.
+        Even the cheap, mass market consoles pack more punch these days than
+        supercomputers of the old days.
+      </p>
+      <p class="lead fs-6">
+        In particular, modern GPUs [Graphical Processing Units] are essentially
+        mini computers within your own computer which are responsible almost
+        entirely for the calculations and processing that lets you see stuff on
+        your monitor. It has its own cache, its own memory, and it’s own
+        dedicated output. In layman terms, for the most part, the faster and
+        more powerful a GPU, the quicker it can render out frames onto your
+        computer screen, and this is what you call FPS, or Frames Per Second.
+      </p>
+      <p class="lead fs-6">
+        Now with some of the basics cleared out, let us slide right into the
+        meat and potatoes of our little discussion as we start with good ‘ole
+        Rasterisation.
+      </p>
+      <p class="lead fs-4 fw-bold">What exactly is “Rasterisation”?</p>
+      <p class="lead fs-6">
+        Rasterisation, unlike what you may think, is a fairly new method for
+        rendering 3D scenes that essentially uses polygons to approximate real
+        3D shapes and lighting. This is quite apparent when you use things like
+        anti-aliasing or anisotropic filtering - what you’re essentially doing
+        is that you’re increasing the number of polygons or using software
+        techniques to make it appear as if you were increasing the number of
+        polygons. This results in a sharper and cleaner 3D render. In the case
+        of video games or even 3D movies, this is much cheaper to accomplish and
+        easier to implement with existing game engines and 3D visual tools such
+        as Unreal engine or Blender.
+      </p>
+      <p class="lead fs-6">
+        Modern GPUs, even cheaper, budget oriented ones are really good at this
+        particular method of rendering 3D frames. Chances are, if you’re playing
+        just about any game and using any GPU that isn’t an Nvidia RTX (with RT
+        enabled) or AMD’s Navi lineup (Radeon 6000 Series / Superresolution),
+        you’re using some form of Rasterisation for all of what your monitor is
+        displaying.
+      </p>
+      <p class="lead fs-4 fw-bold">
+        So with that done, what about Ray Tracing? What’s the big deal and why
+        is it taking the market by such a storm?
+      </p>
+      <p class="lead fs-6">
+        Well, technically speaking, the actual computational technique for RT is
+        quite simple really; Imagine how human beings “see” things - millions,
+        if not billions of individual rays of light(photon streams) bounce off
+        of real world objects and then our brain fills in the gaps by figuring
+        out the details of the raw information it receives and viola! You get to
+        see the world in all of it’s splendor.
+      </p>
+      <p class="lead fs-6">
+        Ray Tracing or RT, employs a very similar technique. We place light
+        sources to make light rays bounce around objects, then we compute the
+        exact way the object should look, how it’s shadows should be, just how
+        much it shines - essentially a very similar process to how we see on a
+        biological level, except it involves an obscene amount of computational
+        power, some incredible algorithms and a lot of software magic and
+        emulation to achieve the end result - which is, quite frankly, an
+        incredible sight to behold. Seriously, if you’re any bit interested in
+        this particular field you may have already perused through the absolute
+        fountain of internet memes involving RTX ON / OFF, but let me assure
+        you, corporate speak aside, the actual end results are stunning and are
+        immediately obvious. RT is most definitely THE FUTURE of 3D rendering,
+        it’s just a question of mass adoption and a function of time - in the
+        meantime, you can already enjoy some gloriously ray traced animated
+        movies that took something like 1000 days or so for each 3D frame to be
+        rendered - which kind of brings it all back to why rendering games at a
+        playable 60+ FPS with RT on requires such massive amounts of
+        computational power and the obscene cost in the present market.
+      </p>
+      <p class="lead fs-4 fw-bold">
+        So where does all of this lead you, the consumer?
+      </p>
+      <p class="lead fs-6">
+        Well, if you really just want some decent card that can play games,
+        don’t buy a card just for the RT aspects - you will be disappointed and
+        will be left with a kidney (or possibly both) sold off.
+      </p>
+      <p class="lead fs-6">
+        In the long run, though, RT is definitely a huge game changer and
+        something we should all be looking forward to, especially with the
+        latest generation of consoles looking to have native support built in,
+        which will, for sure, facilitate a lot of market adoption among
+        developers and consumers alike.
+      </p>
+      <p class="lead fs-6">
+        Thus as we come to a close here, I hope that we all can leave a bit more
+        geeked out than when we arrived here!
+      </p>
+      <hr />
+      <p class="text-muted fs-5 fw-bold">
+        Sources / References [If Any] : Internet
+      </p>
+    </main>
+    <hr />
+    <!--Footer Section-->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container my-5 bg-dark text-white">
+      <footer>
+        <div
+          class="container p-4"
+          style="background-color: rgba(46, 41, 41, 0.762)"
+        >
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                <b>Elektronica>></b>
+              </h5>
+              <p>
+                Elektronica is the tech wing of ECE, NSEC. This is the home for
+                all of your tech cravings and digital needs. Join other
+                like-minded people and share in the infinite rabbit-hole of
+                tech-whiz dom!
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963">
+                Find Us
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a
+                    href="https://www.facebook.com/nsececedpt/"
+                    style="color: #848282"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="https://www.instagram.com/nsec_ece_department/?igshid=atg6qghxzz0v"
+                    style="color: #848282"
+                    >Instagram</a
+                  >
+                </li>
+                <!--<li class="mb-1">
+            <a href="#!" style="color: #4f4f4f;">nthng</a>
+          </li>-->
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-1" style="letter-spacing: 2px; color: #818963">
+                Getting Started
+              </h5>
+              <table class="table" style="color: #848282; border-color: #666">
+                <tbody>
+                  <tr>
+                    <td>Date:</td>
+                    <td>12th - 22th</td>
+                  </tr>
+                  <tr>
+                    <td>Results:</td>
+                    <td>Coming Soon</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © Tech-Eva
+          <p class="text-white">
+            Designed And Maintained By WebTeam of ECE, NSEC Tech Wing, With <3
+          </p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!-- End of .container -->
+    <!--- End of Footer --->
+    <!-- BS5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
